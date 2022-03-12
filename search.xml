@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Unity常用快捷键</title>
+      <link href="/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/"/>
+      <url>/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Unity的常用快捷键"><a href="#Unity的常用快捷键" class="headerlink" title="Unity的常用快捷键"></a><font color="pink">Unity的常用快捷键</font></h1><p>F2: 重命名</p><p>q: 小手手,可以拖动场景</p><p>w: 移动工具,可以移动物体</p><p>e: 旋转工具,可以旋转物体</p><p>r: 缩放工具,可以缩放物体</p><p>t:二维缩放工具</p><p>y:全能工具,可以移动缩放旋转物体</p><p>shift + f: 可以将视图定位到物体,一定要选中物体再使用,不然没反应</p><p>ctrl + shift + f:可以将物体移动到当前视图位置.<font color="red">注:旋转与视图一致,常用与调整摄像机位置.</font></p><p>x: 在全局坐标系和局部坐标系间相互切换</p><p>z: 在出厂中心点(原始中心点)和计算中心点间相互切换.<font color="red">计算中心点是Unity计算出的中心点,在物体正中心,原始中心点是模型中心点</font></p><p>v: 按住v键,可以选择顶点,顶点吸附</p><p>ctrl:按住ctrl键,移动或旋转缩放物体,是按照一定的大小变换的.可以在edit中的Grid and snap菜单中修改单位</p><p>ctrl:按住ctrl,可以加选物体</p><p>shift:按住物体可以选择多个物体</p><p>ctrl + d: 快速复制物体</p><p>ctrl + c: 复制</p><p>ctrl + v: 粘贴</p><p>ctrl + a:全选</p><hr><p>shift + enter: 窗口最大化</p><p>ctrl + shift + b: 打包设置</p><p>ctrl + b: 打包并运行</p><p>ctrl + n:新建场景</p><p>ctrl + s: 保存</p><p>ctrl + r: 刷新</p><p>ctrl + z: 撤销</p><p>ctrl + y:重做</p><p>ctrl + p: 运行</p><p>ctrl + shift + p:暂停</p><p>ctrl + alt + p: 停止</p><p>按住鼠标右键进入漫游模式,wasd移动,按住shift加速.</p><p>其实方向键可以直接移动.</p><p>delete: 删除物体</p><p>shift + delete:强制删除(此时没有提示是否要删除)</p><p>ctrl + shift + c:打开控制台</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo建站心得</title>
       <link href="/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/"/>
       <url>/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/</url>
