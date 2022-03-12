@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo建站心得, 编程学习,编程,java,python,c++,web">
-    <meta name="description" content="第一次建站心得总之太难了
-">
+    <meta name="keywords" content="mysql的学习笔记, 编程学习,编程,java,python,c++,web">
+    <meta name="description" content="DB DBMS SQL关系DB:是数据库在硬盘中的文件
+DBMS:是管理数据库的系统,数据库管理系统
+SQL:是结构查询语言,是高级语言,在DBMS中先编译运行.
+DBMS(执行) -&amp;gt; SQL(操控) -&amp;gt; DB(文件)
+SQ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo建站心得 | 编程学习</title>
+    <title>mysql的学习笔记 | 编程学习</title>
     <link rel="icon" type="image/png" href="/choodsire.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/choodsire.github.io/libs/awesome/css/all.min.css">
@@ -314,12 +317,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo建站心得</h1>
+                    <h1 class="description center-align post-title">mysql的学习笔记</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +438,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/choodsire.github.io/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/choodsire.github.io/tags/mysql/">
+                                <span class="chip bg-color">mysql</span>
                             </a>
                         
                     </div>
@@ -447,8 +450,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/choodsire.github.io/categories/Hexo/" class="post-category">
-                                Hexo
+                            <a href="/choodsire.github.io/categories/mysql/" class="post-category">
+                                mysql
                             </a>
                         
                     </div>
@@ -460,28 +463,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-11
+                    2022-03-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-11
+                    2022-03-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    12
+                    2.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    10 分
                 </div>
                 
 
@@ -504,7 +507,341 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第一次建站心得"><a href="#第一次建站心得" class="headerlink" title="第一次建站心得"></a>第一次建站心得</h1><p>总之太难了</p>
+                <h1 id="DB-DBMS-SQL关系"><a href="#DB-DBMS-SQL关系" class="headerlink" title="DB DBMS SQL关系"></a>DB DBMS SQL关系</h1><p>DB:是数据库在硬盘中的文件</p>
+<p>DBMS:是管理数据库的系统,数据库管理系统</p>
+<p>SQL:是结构查询语言,是高级语言,在DBMS中先编译运行.</p>
+<p>DBMS(执行) -&gt; SQL(操控) -&gt; DB(文件)</p>
+<h1 id="SQL语句分类"><a href="#SQL语句分类" class="headerlink" title="SQL语句分类"></a>SQL语句分类</h1><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205194529927.png" alt="image-20220205194529927"></p>
+<h1 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h1><h2 id="登入mysql"><a href="#登入mysql" class="headerlink" title="登入mysql:"></a>登入mysql:</h2><p>​    mysql -u root -p</p>
+<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库:"></a>查看数据库:</h2><p>​    show databases;(不是sql语句,是mysql独有的)</p>
+<h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库:"></a>创建数据库:</h2><p>​    create database bjpowernode;(不是sql语句,是mysql独有的)</p>
+<h2 id="使用bjpowernode数据库"><a href="#使用bjpowernode数据库" class="headerlink" title="使用bjpowernode数据库:"></a>使用bjpowernode数据库:</h2><p>​    use bjpowernode;(不是sql语句,是mysql独有的)</p>
+<h2 id="查看当前数据中的表"><a href="#查看当前数据中的表" class="headerlink" title="查看当前数据中的表:"></a>查看当前数据中的表:</h2><p>​    show tables;(不是sql语句,是mysql独有的)</p>
+<h2 id="初始化数据"><a href="#初始化数据" class="headerlink" title="初始化数据"></a>初始化数据</h2><p>​    source 路径\文件名.sql</p>
+<p>后缀名为.sql的文件称为sql脚本.</p>
+<p>直接使用source命令可以执行sql脚本</p>
+<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库:"></a>删除数据库:</h2><p>​    drop database jpowernode;</p>
+<h2 id="查看表结构"><a href="#查看表结构" class="headerlink" title="查看表结构:"></a>查看表结构:</h2><p>​    desc dept;(部门表)</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201017469.png" alt="image-20220205201017469"></p>
+<p>​    desc emp;(员工表)</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201038884.png" alt="image-20220205201038884"></p>
+<p>​    desc salgrade;(工资等级表)</p>
+<p>​    <img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201147925.png" alt="image-20220205201147925"></p>
+<h2 id="查看表中数据"><a href="#查看表中数据" class="headerlink" title="查看表中数据:"></a>查看表中数据:</h2><p>​    select * from dept;</p>
+<p>​    <img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201550191.png" alt="image-20220205201550191"></p>
+<p> select * fromt emp;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201615741.png" alt="image-20220205201615741"></p>
+<p> select * from salgrade;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201637707.png" alt="image-20220205201637707"></p>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="查询当前使用的数据库"><a href="#查询当前使用的数据库" class="headerlink" title="查询当前使用的数据库:"></a>查询当前使用的数据库:</h2><p>​    select database();</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201813112.png" alt="image-20220205201813112"></p>
+<h2 id="查看当前数据库版本"><a href="#查看当前数据库版本" class="headerlink" title="查看当前数据库版本:"></a>查看当前数据库版本:</h2><p>​    select version();</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205201818017.png" alt="image-20220205201818017"></p>
+<h2 id="结束一条语句"><a href="#结束一条语句" class="headerlink" title="结束一条语句"></a>结束一条语句</h2><p>\c  </p>
+<h2 id="退出mysql"><a href="#退出mysql" class="headerlink" title="退出mysql"></a>退出mysql</h2><p>exit</p>
+<h1 id="查看语句"><a href="#查看语句" class="headerlink" title="查看语句"></a>查看语句</h1><h2 id="查看现有的数据库"><a href="#查看现有的数据库" class="headerlink" title="查看现有的数据库"></a>查看现有的数据库</h2><p>​    show databases;</p>
+<h2 id="查看当前使用的库"><a href="#查看当前使用的库" class="headerlink" title="查看当前使用的库"></a>查看当前使用的库</h2><p>​    select database();</p>
+<h2 id="查看当前库中的表"><a href="#查看当前库中的表" class="headerlink" title="查看当前库中的表"></a>查看当前库中的表</h2><p>​    show tables;</p>
+<h2 id="查看其他库中的表"><a href="#查看其他库中的表" class="headerlink" title="查看其他库中的表"></a>查看其他库中的表</h2><p>​    show tables from 其他表名;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205202828271.png" alt="image-20220205202828271"></p>
+<h2 id="查看表的结构"><a href="#查看表的结构" class="headerlink" title="查看表的结构"></a>查看表的结构</h2><p>​    desc emp;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205202857115.png" alt="image-20220205202857115"></p>
+<h2 id="查看表的创建语句"><a href="#查看表的创建语句" class="headerlink" title="查看表的创建语句"></a>查看表的创建语句</h2><p>​    show create table emp;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205203026383.png" alt="image-20220205203026383"></p>
+<h1 id="查询语句-DQL"><a href="#查询语句-DQL" class="headerlink" title="查询语句(DQL)"></a>查询语句(DQL)</h1><h2 id="简单的查询语句"><a href="#简单的查询语句" class="headerlink" title="简单的查询语句"></a>简单的查询语句</h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>select 字段名1,字段名2,字段名3,… from 表名;</p>
+<p>sql语句不区分大小写;</p>
+<p>sql语句以”;”结尾;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205203429103.png" alt="image-20220205203429103"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205203519851.png" alt="image-20220205203519851"></p>
+<h3 id="字段可以参与数学计算"><a href="#字段可以参与数学计算" class="headerlink" title="字段可以参与数学计算;"></a>字段可以参与数学计算;</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205203630396.png" alt="image-20220205203630396"></p>
+<h3 id="给查询结果的列重复名"><a href="#给查询结果的列重复名" class="headerlink" title="给查询结果的列重复名"></a>给查询结果的列重复名</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205203743216.png" alt="image-20220205203743216"></p>
+<p>中文要加 ‘ ‘,</p>
+<p>mysql建议字符串用单引号,不适用双引号;</p>
+<h3 id="查询所有字段"><a href="#查询所有字段" class="headerlink" title="查询所有字段"></a>查询所有字段</h3><p>select * from emp;//实际开发中不使用*,效率低下</p>
+<h2 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h2><h4 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h4><p>​    select 字段,字段…. from 表名 where 条件;</p>
+<p>执行顺序:先from,然后where,最后select</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205204426151.png" alt="image-20220205204426151"></p>
+<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><p>= 等于</p>
+<p>&lt;&gt; 或!= 不等于</p>
+<p>&lt; 小于</p>
+<p>&lt;= 小于等于</p>
+<p>&gt; 大于</p>
+<p>&gt;= 大于等于</p>
+<p>between … and … ,&gt;= and &lt;= 连个值之间</p>
+<p>is null 为null</p>
+<p>is not null 不为null</p>
+<p>and 并且</p>
+<p>or 或者</p>
+<p>in 包含</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205210112929.png" alt="image-20220205210112929"></p>
+<p>not in 不包含</p>
+<p>not 取非</p>
+<p>like 模糊查询,支持%或下划线匹配</p>
+<p>​    %任意多的字符,_一个字符</p>
+<p>between 字符 and 字符,左闭右开</p>
+<p>()有最高优先级</p>
+<h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><p>语法</p>
+<p>select 字段,字段… from 表名 order by 字段 排序规则;</p>
+<p>默认是升序;</p>
+<p>asc 升序</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211034870.png" alt="image-20220205211034870"></p>
+<p>desc 降序</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211059265.png" alt="image-20220205211059265"></p>
+<p>多个排序规则</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211327307.png" alt="image-20220205211327307"></p>
+<p>按照列排序(不健壮)</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211432373.png" alt="image-20220205211432373"></p>
+<p>顺序</p>
+<p>order by是最后执行的</p>
+<p>先from,后where,然后select,最后order by</p>
+<h2 id="分组函数-多行处理函数"><a href="#分组函数-多行处理函数" class="headerlink" title="分组函数(多行处理函数)"></a>分组函数(多行处理函数)</h2><h3 id="count-计数"><a href="#count-计数" class="headerlink" title="count 计数"></a>count 计数</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211929872.png" alt="image-20220205211929872"></p>
+<h3 id="sum-求和"><a href="#sum-求和" class="headerlink" title="sum 求和"></a>sum 求和</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211912105.png" alt="image-20220205211912105"></p>
+<h3 id="avg-平均值"><a href="#avg-平均值" class="headerlink" title="avg 平均值"></a>avg 平均值</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211856984.png" alt="image-20220205211856984"></p>
+<h3 id="max-最大值"><a href="#max-最大值" class="headerlink" title="max 最大值"></a>max 最大值</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211829647.png" alt="image-20220205211829647"></p>
+<h3 id="min-最小值"><a href="#min-最小值" class="headerlink" title="min 最小值"></a>min 最小值</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205211842997.png" alt="image-20220205211842997"></p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>输入多行,输出一行结果</p>
+<p>自动忽略NULL</p>
+<p>分组函数不能使用在where子句中</p>
+<h2 id="单行处理函数"><a href="#单行处理函数" class="headerlink" title="单行处理函数"></a>单行处理函数</h2><h3 id="ifnull-空处理函数"><a href="#ifnull-空处理函数" class="headerlink" title="ifnull() 空处理函数"></a>ifnull() 空处理函数</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205212548892.png" alt="image-20220205212548892"></p>
+<h3 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h3><p>输入一行,输出一行</p>
+<h2 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h2><h3 id="group-by-按照某个字段或者某些字段进行分组"><a href="#group-by-按照某个字段或者某些字段进行分组" class="headerlink" title="group by: 按照某个字段或者某些字段进行分组"></a>group by: 按照某个字段或者某些字段进行分组</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205215535934.png"></p>
+<h3 id="having-having是对分组之后的数据进行再次过滤-效率低下"><a href="#having-having是对分组之后的数据进行再次过滤-效率低下" class="headerlink" title="having: having是对分组之后的数据进行再次过滤,效率低下"></a>having: having是对分组之后的数据进行再次过滤,效率低下</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205215804800.png" alt="image-20220205215804800"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205215944591.png" alt="image-20220205215944591"></p>
+<h2 id="查询结构去重"><a href="#查询结构去重" class="headerlink" title="查询结构去重"></a>查询结构去重</h2><p>distinct</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220205220830498.png" alt="image-20220205220830498"></p>
+<p>distinct 只能出现在所有字段的最前面</p>
+<h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>select 5</p>
+<p>​    …</p>
+<p>from 1</p>
+<p>​    …</p>
+<p>where 2</p>
+<p>​    …</p>
+<p>group by 3</p>
+<p>​    …</p>
+<p>having 4</p>
+<p>​    …</p>
+<p>order by 6</p>
+<p>​    …</p>
+<p>;</p>
+<h2 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h2><h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="内连接"><a href="#内连接" class="headerlink" title="内连接"></a>内连接</h4><p>​    使用inner join … on … where</p>
+<p>​    inner可以省略</p>
+<h5 id="等值连接"><a href="#等值连接" class="headerlink" title="等值连接"></a>等值连接</h5><p>​        表一和表二有相等的值</p>
+<h5 id="非等值连接"><a href="#非等值连接" class="headerlink" title="非等值连接"></a>非等值连接</h5><p>​        表一和表二非相等的值</p>
+<h5 id="自连接"><a href="#自连接" class="headerlink" title="自连接"></a>自连接</h5><p>​        表一和表一有相等的值</p>
+<h4 id="外连接"><a href="#外连接" class="headerlink" title="外连接"></a>外连接</h4><p>​    使用outer join … on … where</p>
+<p>​    outer可以省略</p>
+<h5 id="左外连接"><a href="#左外连接" class="headerlink" title="左外连接"></a>左外连接</h5><p>​        left outer join … on … where</p>
+<p>​        左边为主表,右边为副表,副表中找不到对应值,填NULL</p>
+<h5 id="右外连接"><a href="#右外连接" class="headerlink" title="右外连接"></a>右外连接</h5><p>​        right outer join … on … where</p>
+<p>​        左边为副表,右边为主表,副表中找不到对应值,填NULL</p>
+<h5 id="全连接"><a href="#全连接" class="headerlink" title="全连接"></a>全连接</h5><p>​        使用union 连接select 子语句</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206145040026.png" alt="image-20220206145040026"></p>
+<h2 id="select子语句"><a href="#select子语句" class="headerlink" title="select子语句"></a>select子语句</h2><p>​    select</p>
+<p>​        …(select …)</p>
+<p>​    from</p>
+<p>​        …(select …)</p>
+<p>​    where </p>
+<p>​        …(select …)</p>
+<h2 id="limit"><a href="#limit" class="headerlink" title="limit"></a>limit</h2><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206152816984.png" alt="image-20220206152816984"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206152835675.png" alt="image-20220206152835675"></p>
+<p>limit是sql语句最后执行的一个环节</p>
+<p>select 5</p>
+<p>​    …</p>
+<p>from 1</p>
+<p> …</p>
+<p>where 2</p>
+<p> …</p>
+<p>group by 3</p>
+<p>​    …</p>
+<p>having 4</p>
+<p>​    …</p>
+<p>order by 6</p>
+<p>​    …</p>
+<p>limit 7</p>
+<p>​    …;</p>
+<h1 id="定义表数据结构语句-DDL"><a href="#定义表数据结构语句-DDL" class="headerlink" title="(定义表数据结构语句)DDL"></a>(定义表数据结构语句)DDL</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206153643617.png" alt="image-20220206153643617"></p>
+<h2 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h2><p>保证表中的数据的合法性,有效性,完整性.</p>
+<h3 id="非空约束"><a href="#非空约束" class="headerlink" title="非空约束"></a>非空约束</h3><p>not null :约束的字段不能为null</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206165825901.png" alt="image-20220206165825901"></p>
+<h3 id="唯一约束"><a href="#唯一约束" class="headerlink" title="唯一约束"></a>唯一约束</h3><p> unique :约束的字段不能重复</p>
+<p>列级约束</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206165724330.png" alt="image-20220206165724330"></p>
+<p>批量添加unique,这表示(这两个一起不能重复)</p>
+<p>表级约束</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206170017913.png" alt="image-20220206170017913"></p>
+<p>NULL可以重复</p>
+<h3 id="主键约束"><a href="#主键约束" class="headerlink" title="主键约束"></a>主键约束</h3><p>primary key(pk): 约束的字段不能为null,也不能重复</p>
+<h4 id="单一主键"><a href="#单一主键" class="headerlink" title="单一主键"></a>单一主键</h4><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206170550419.png" alt="image-20220206170550419"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206170622598.png" alt="image-20220206170622598"></p>
+<h4 id="复合主键"><a href="#复合主键" class="headerlink" title="复合主键"></a>复合主键</h4><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207151235732.png" alt="image-20220207151235732"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207151253856.png" alt="image-20220207151253856"></p>
+<p>​    复合主键不建议使用,违背了三范式.</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207151822609.png" alt="image-20220207151822609"></p>
+<h3 id="mysql提供的主键值自增"><a href="#mysql提供的主键值自增" class="headerlink" title="mysql提供的主键值自增"></a>mysql提供的主键值自增</h3><p>auto_increment</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207153251978.png" alt="image-20220207153251978"></p>
+<h3 id="外键约束-froeign-key-fk-…"><a href="#外键约束-froeign-key-fk-…" class="headerlink" title="外键约束 froeign key(fk):…"></a>外键约束 froeign key(fk):…</h3><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207165549047.png" alt="image-20220207165549047"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207170545755.png" alt="image-20220207170545755"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207170555786.png" alt="image-20220207170555786"></p>
+<p>​    <img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207170602739.png" alt="image-20220207170602739"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207170614934.png" alt="image-20220207170614934"> </p>
+<p>父表中没有的数据,子表不可以绑定外键</p>
+<p>外键值可以为NULL</p>
+<p>被引用的字段不一定是主键,但至少具有unique约束</p>
+<h3 id="检查约束-check-注意-mysql不支持"><a href="#检查约束-check-注意-mysql不支持" class="headerlink" title="检查约束 check  注意:     mysql不支持"></a>检查约束 check  注意:     mysql不支持</h3><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">DROP TABLE IF EXISTS t_student;
+DROP TABLE IF EXISTS t_class;
+
+CREATE TABLE t_class(
+	cno INT,
+	cname VARCHAR(255),
+	UNIQUE(cno)
+);
+
+CREATE TABLE t_student(
+	sno INT,
+	sname VARCHAR(255),
+	classno INT,
+	FOREIGN KEY(classno) REFERENCES t_class(cno)
+);
+
+INSERT INTO t_class VALUES(NULL,'xxxxx');
+INSERT INTO t_class VALUES(102,'yyyyy');
+
+INSERT INTO t_student VALUES(1,'a',NULL);
+INSERT INTO t_student VALUES(2,'b',NULL);
+INSERT INTO t_student VALUES(3,'c',102);
+INSERT INTO t_student VALUES(4,'d',102);
+
+SELECT * FROM t_class;
+SELECT * FROM t_student;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207173422067.png" alt="image-20220207173422067"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207173429767.png" alt="image-20220207173429767"></p>
+<h2 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h2><p>crerate table 表名(</p>
+<p>​    字段1 数据类型,</p>
+<p>​    字段2 数据类型 default 值,</p>
+<p>​    字段3 数据类型</p>
+<p>);</p>
+<h2 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h2><p>drop table if exists 表名;</p>
+<h2 id="拷贝表"><a href="#拷贝表" class="headerlink" title="拷贝表"></a>拷贝表</h2><p>create table 表名 as select 语句;</p>
+<p>把查询结果创建成一个新表<img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206160456714.png" alt="image-20220206160456714"></p>
+<h1 id="修改表数据语句-DML"><a href="#修改表数据语句-DML" class="headerlink" title="修改表数据语句(DML)"></a>修改表数据语句(DML)</h1><h2 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h2><p>insert into 表名(字段1,字段2…) values(字段1,字段2…);</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206154619766.png" alt="image-20220206154619766"></p>
+<p>字段顺序只要一一对应就行,无特殊顺序要求</p>
+<p>为填入的字段,赋值为初始值</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206155940628.png" alt="image-20220206155940628"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206155953120.png" alt="image-20220206155953120"></p>
+<p>insert可以插入多行数据</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206160102256.png" alt="image-20220206160102256"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206160125926.png" alt="image-20220206160125926"></p>
+<h2 id="插入表"><a href="#插入表" class="headerlink" title="插入表"></a>插入表</h2><p>insert into 表名 select语句;</p>
+<p>将select 的结果插入到表中</p>
+<h2 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h2><p>update 表名 set 字段名1=值1,字段名2=值2… where 条件;</p>
+<p>没有条件整张表更新<img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220206161305681.png" alt="image-20220206161305681"></p>
+<h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><p>delete from 表名 where 条件;</p>
+<p>没有条件所有删除</p>
+<p>truncate table 表名;</p>
+<p>表被截断,永久删除,不可回滚</p>
+<h1 id="存储引擎"><a href="#存储引擎" class="headerlink" title="存储引擎"></a>存储引擎</h1><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207180749779.png" alt="image-20220207180749779"></p>
+<p>show engines \g 查看当前mysql支持的存储引擎</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207181132085.png" alt="image-20220207181132085"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207181419957.png" alt="image-20220207181419957"></p>
+<h2 id="常见的存储引擎"><a href="#常见的存储引擎" class="headerlink" title="常见的存储引擎"></a>常见的存储引擎</h2><h3 id="MyISAM"><a href="#MyISAM" class="headerlink" title="MyISAM"></a>MyISAM</h3><p>不支持事务,是mysql最常用的存储引擎,不是默认的.</p>
+<p>使用三个文件表示每个表</p>
+<p>​    格式文件:存储表结构的定义(mytable.frm)</p>
+<p>​    数据文件:存储表行的内容(mytable.MYD)</p>
+<p>​    索引文件:存储表上索引(mytable.MYI)</p>
+<p>灵活的AUTO_INCREMENT字段处理</p>
+<p>优点:</p>
+<p>可被转换为压缩,只读表来节省空间.并且可以转换为只读表,提高检索效率.</p>
+<p>缺点:</p>
+<p>不支持事务.</p>
+<h3 id="InnoDB"><a href="#InnoDB" class="headerlink" title="InnoDB"></a>InnoDB</h3><p>是mysql的缺省引擎</p>
+<p>特征</p>
+<p>​    每个InnoDB表在数据库目录中以.frm格式文件表示</p>
+<p>​    InnoDB表空间tablespace被用于存储表的内容(不可压缩,不可转换为只读,不节省空间)</p>
+<p>​    提供一组用来记录事务性活动的日志文件</p>
+<p>​    用COMMIT(提交),SAVEPOINT及ROLLBACK(回滚)支持事务处理</p>
+<p>​    提供全ACID兼容</p>
+<p>​    在mysql服务器崩溃后提供自动恢复</p>
+<p>​    多版本(MVCC)和行级锁定</p>
+<p>​    支持外键及引用的完整性,包括级联删除和更新</p>
+<p>优点:</p>
+<p>​        支持事务,行级锁,外键等.</p>
+<p>​        这种存储引擎数据的安全得到保障.</p>
+<h3 id="MEMORY"><a href="#MEMORY" class="headerlink" title="MEMORY"></a>MEMORY</h3><p>特征</p>
+<p>​    在数据库目录内,每个表均以.frm格式 的文件表示</p>
+<p>​    表数据及索引被存储在内存中</p>
+<p>​    表级锁机制</p>
+<p>​    不能包含TEXT或BLOB字段</p>
+<p>以前叫做HEPA引擎</p>
+<h1 id="事务-Transaction"><a href="#事务-Transaction" class="headerlink" title="事务(Transaction)"></a>事务(Transaction)</h1><p>一个事务是一个完整的业务逻辑单元,不可再分.</p>
+<p>要不同时成功,那么同时失败</p>
+<p>那么就得使用数据库的事务机制</p>
+<p>和事务相关的语句只有:DML语句.(insert delete update)</p>
+<p>事务的存在就是为了保证数据的完整性,安全性</p>
+<p>事务通常需要多条DML语句共同联合完成.</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>开始事务机制:</p>
+<p>执行一条DML语句,将其执行记录到操作历史中.</p>
+<p>执行一条DML语句,将其执行记录到操作历史中</p>
+<p>…</p>
+<p>提交事务或者回滚事务(结束事务机制)</p>
+<p>提交事务:</p>
+<p>​    删除操作历史,将更改保存在硬盘中.成功操作</p>
+<p>回滚事务:</p>
+<p>​    删除操作历史,并不保存.失败操作</p>
+<p>SAVEPOINT(保存点):回滚可以回滚到此    </p>
+<h2 id="事务的四大特性"><a href="#事务的四大特性" class="headerlink" title="事务的四大特性"></a>事务的四大特性</h2><h3 id="原子性"><a href="#原子性" class="headerlink" title="原子性"></a>原子性</h3><p>事务是最小的工作单元,不可再分.</p>
+<h3 id="一致性"><a href="#一致性" class="headerlink" title="一致性"></a>一致性</h3><p>事务必须保证多条DML语句同时成功或同时失败</p>
+<h3 id="隔离性"><a href="#隔离性" class="headerlink" title="隔离性"></a>隔离性</h3><p>事务A与事务B之间具有隔离</p>
+<h3 id="持久性"><a href="#持久性" class="headerlink" title="持久性"></a>持久性</h3><p>持久性说的是最终数据必须持久化到硬盘文件中,事务才算成功的结束.</p>
+<h2 id="隔离性-1"><a href="#隔离性-1" class="headerlink" title="隔离性"></a>隔离性</h2><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207214158842.png" alt="image-20220207214158842"></p>
+<p>mysql中的事务是自动提交的.</p>
+<p>使用start transaction开启事务,就不是自动提交了.</p>
+<p>设置隔离级别</p>
+<p>set global transaction isolation level read uncommitted;</p>
+<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><p>索引就相当于于一本书的目录,通过目录可以快速找到对于的资源.</p>
+<p>在数据库方面,查询一张表的时候有两种检索方式:</p>
+<p>​    第一种方式:全表扫描;</p>
+<p>​    第二种:根据索引检索(效率很高)</p>
+<p>索引虽然可以提高检索效率,但是不能随意的添加索引,因为索引也是数据库当中的对象,也需要不断的维护.有维护成本的.</p>
+<p>什么时候考虑给字段添加索引?</p>
+<p>​    数据量庞大.(根据用户的需求,根据线上的环境)</p>
+<p>​    该字段很少的DML操作.(因为字段进行修改操作,索引也需要维护)</p>
+<p>​    该字段经常出现在where字句中.(经常根据哪个字段查询)</p>
+<p>主键和具有unique约束的字段自动添加检索.</p>
+<p>查看sql语句的执行计划:<br>explain sql语句;</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207223249721.png" alt="image-20220207223249721"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207223537321.png" alt="image-20220207223537321"></p>
+<h2 id="创建索引对象"><a href="#创建索引对象" class="headerlink" title="创建索引对象"></a>创建索引对象</h2><p>create index 索引名称 on 表名(字段);</p>
+<h2 id="删除索引对象"><a href="#删除索引对象" class="headerlink" title="删除索引对象"></a>删除索引对象</h2><p>drop index 索引名称 on 表名;</p>
+<h2 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h2><p>索引底层采用的数据结构是:B+Tree</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207230139049.png" alt="image-20220207230139049"></p>
+<h2 id="索引的分类"><a href="#索引的分类" class="headerlink" title="索引的分类"></a>索引的分类</h2><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207230519093.png" alt="image-20220207230519093"></p>
+<h1 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h1><p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207232415881.png" alt="image-20220207232415881"></p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220207233712557.png" alt="image-20220207233712557"></p>
+<h1 id="DBA命令"><a href="#DBA命令" class="headerlink" title="DBA命令"></a>DBA命令</h1><p>将数据库当中的数据导出</p>
+<p>mysqldump 数据库名称&gt;路径 -u root -p</p>
+<p>导入数据</p>
+<p>create database 数据库名称;</p>
+<p>use 数据库名;</p>
+<p>source 路径;</p>
+<h1 id="设计三范式"><a href="#设计三范式" class="headerlink" title="设计三范式"></a>设计三范式</h1><p>第一范式:</p>
+<p>要有主键,字段具有原子性,不可再分</p>
+<p>第二范式:</p>
+<p>不能有部分依赖</p>
+<p>多对多?</p>
+<p>学生和老师</p>
+<p>三张表,关系表,两个外键</p>
+<p>第三范式:</p>
+<p>不能有传递依赖</p>
+<p>单对多?</p>
+<p>学生和班级</p>
+<p>两张表,学生一个外键.</p>
+<p>父表和子表</p>
+<p><img src="C:\Users\XIEJINGCHENG\AppData\Roaming\Typora\typora-user-images\image-20220208001110160.png" alt="image-20220208001110160"></p>
+<h1 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h1><h2 id="行级锁-乐观锁"><a href="#行级锁-乐观锁" class="headerlink" title="行级锁(乐观锁)"></a>行级锁(乐观锁)</h2><p>select 语句 for update;</p>
+<p>在一个事务没结束时必须排队,不允许其他修改</p>
+<h2 id="表级锁-悲观锁"><a href="#表级锁-悲观锁" class="headerlink" title="表级锁(悲观锁)"></a>表级锁(悲观锁)</h2><p>允许并发操作</p>
 
                 
             </div>
@@ -531,7 +868,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/</a>
+                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/12/mysql-de-xue-xi-bi-ji/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/12/mysql-de-xue-xi-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -569,8 +906,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/choodsire.github.io/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/choodsire.github.io/tags/mysql/">
+                                    <span class="chip bg-color">mysql</span>
                                 </a>
                             
                         </div>
@@ -744,9 +1081,60 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/choodsire.github.io/2022/03/12/mysql-de-xue-xi-bi-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/choodsire.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="mysql的学习笔记">
+                        
+                        <span class="card-title">mysql的学习笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/choodsire.github.io/categories/mysql/" class="post-category">
+                                    mysql
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/choodsire.github.io/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/">
                     <div class="card-image">
@@ -764,9 +1152,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -784,56 +1172,6 @@
                     
                     <a href="/choodsire.github.io/tags/Unity/">
                         <span class="chip bg-color">Unity</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/choodsire.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo建站心得">
-                        
-                        <span class="card-title">Hexo建站心得</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/choodsire.github.io/categories/Hexo/" class="post-category">
-                                    Hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/choodsire.github.io/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
                 </div>
