@@ -4,11 +4,136 @@
   
     
     <entry>
+      <title>zset的基本命令</title>
+      <link href="/choodsire.github.io/2022/03/16/zset-de-ji-ben-ming-ling/"/>
+      <url>/choodsire.github.io/2022/03/16/zset-de-ji-ben-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="zset的基本命令"><a href="#zset的基本命令" class="headerlink" title="zset的基本命令"></a><font color="pink">zset的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//将一个或者多个member及其score值加入有序集合zadd key score value [score value] //如果元素存在则覆盖分数//获取指定有序集合中指定下标区间中的值zrange key startIndex endIndex [withscores] //分数越高的排在越后面//获取指定有序集合中指定分数区间的元素zrangebyscore key min max [withscores] [limit startIndex endIndex]//删除指定有序集合中一个或者多个元素zrem key member [member...]//获取指定有序集合中所有元素的个数zcard key//获取指定有序集合中指定元素的排名zrank key member //从0开始排//获取指定有序集合中分数在指定区间内的元素个数zcount key min max//获取指定有序集合中指定元素的分数zscore key member//获取指定元素在指定有序集合中的排名(逆向倒数)zrevrank key member//注,有些和顺序有关的,加rev,就可以反转<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hash的基本命令</title>
+      <link href="/choodsire.github.io/2022/03/16/hash-de-ji-ben-ming-ling/"/>
+      <url>/choodsire.github.io/2022/03/16/hash-de-ji-ben-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hash的基本操作"><a href="#hash的基本操作" class="headerlink" title="hash的基本操作"></a><font color="pink">hash的基本操作</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//将一个或者多个field-value对设置到hash表中hset key field value [field value...]//批量一个或者多个field-value对设置到hash表中hmset key field value [field value...] //个人认为这两个命令没啥子区别//获取指定hash表中指定field值hget key field//批量获取指定hash表中的field值hmget key field [field...]//获取指定hash表中所有的field和valuehgetall key//从指定hash表中删除一个或者多个fieldhdel key field [field...]//获取指定hash表中所有field个数hlen key//判断指定hash表是否存在某一个fieldhexsits key field//获取指定hash表中所有的field列表hkeys key//获取指定hash表中所有的value列表hvals key//对指定hash表中指定field值进行整数加法运算hincrby key field int//对指定hash表中指定field值进行减法运算hdecrby key field int//对指定hash表中的field进行浮点数加法运算hincrbyfloat key field float//对指定hash表中的field进行浮点数减法运算hdecrbyfloat key field float//设置指定hash表中的field值,如果存在则放弃hsetnx key field value<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>set的基本命令</title>
+      <link href="/choodsire.github.io/2022/03/16/set-de-ji-ben-ming-ling/"/>
+      <url>/choodsire.github.io/2022/03/16/set-de-ji-ben-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="set的基本命令"><a href="#set的基本命令" class="headerlink" title="set的基本命令"></a><font color="pink">set的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//添加一个或多个membersadd key member[member...]//获取指定集合中的所有元素smembers key//判断指定元素在指定集合中是否存在sismember key member//存在返回1,不存在返回0//获取指定集合的长度scard key//移除指定集合中一个或多个元素srem key member[member...]//不存在则忽略,返回成功移除的个数//随机获取指定集合中的一个或者多个元素srandmember key [count] // count &gt; 0,随机出的元素不重复,count &lt; 0,随机出的元素可以重复//从指定集合中随机移除一个或者多个元素spop key [count] //将指定集合中的元素移动到另一个集合中smove source dest membersmove set01 set02 a//求差集sdiff set01 set02 set03 //返回set01有,其他集合没有的值//求交集sinter set01 set02 set03 //返回都有的//求并集sunion set01 set02 set03 //所有集合中的所有元素<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>list的基本命令</title>
+      <link href="/choodsire.github.io/2022/03/16/list-de-ji-ben-ming-ling/"/>
+      <url>/choodsire.github.io/2022/03/16/list-de-ji-ben-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="list的基本命令"><a href="#list的基本命令" class="headerlink" title="list的基本命令"></a><font color="pink">list的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//将一个值或多个值依次插入到列表表头(类比数据结构的头插法)lpush key 1 2 3 //结果是 3 2 1//获取指定列表中指定下标区间的元素lrange key startIndex endIndexlrange key 0 -1 //获取全部//将一个值或多个值依次插入列表表尾(类比数据结构的尾插法)rpush key a b c //a b crpush key d e //a b c d e//从指定列表中删除并返回表头元素lpop key//从指定列表中删除并返回表尾元素rpop key//获取列表中指定下标的元素lindex key index//获取指定列表的长度llen key//根据count移除指定列表中和value值一样的数据lrem key count value //如果count &gt; 0 ,从左开始移除count个和value一样的数据,如果count &lt; 0,从右开始移除count个value一样的数据,如果count = 0,移除所有和value一样的数据//截取指定列表中指定下标区间的元素组成新的列表,并赋值给keyltrim key startIndex endIndex//将指定列表中指定下标的元素设置为指定值lset key index value//将value插入到指定列表中位于pivot元素之前/之后linsert key before/after pivot value<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>string的基本命令</title>
+      <link href="/choodsire.github.io/2022/03/16/string-de-ji-ben-ming-ling/"/>
+      <url>/choodsire.github.io/2022/03/16/string-de-ji-ben-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h1 id="string的基本命令"><a href="#string的基本命令" class="headerlink" title="string的基本命令"></a><font color="pink">string的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//设置值set key value//获取值get key//修改值set key newvalue //key已存在时//追加字符串append key value //返回追加后字符串长度,如果key不存在创建一个key,值就为value//获取字符串数据的长度strlen key //如果key不存在,返回0//字符串加一操作incr key //返回加一之后的结果 increment,如果key值不是Integer,会报错,ERR value is not an integer or out of range//如果key 不存在,则创建一个key,并为1//字符串减一运算decr key //返回减一后的结果,如果key值不是Integer,ERR value is not an integer or out of range//如果key 不存在,则创建一个key,并为-1//将字符串数值进行加offset运算incrby key offset //返回加一之后的结果,如果key值不是Integer,会报错,ERR value is not an integer or out of range//如果key 不存在,则创建一个key,并为offset//将字符串数值进行减offset运算decrby key offset //返回加一之后的结果,如果key值不是Integer,会报错,ERR value is not an integer or out of range//如果key 不存在,则创建一个key,并为-offset//获取字符串中的子字符串getrange key startIndex endIndex //可以为负数,负数从右往左数getrange key 0 -1 //全部//修改指定区间的字符setrange key startIndex vaule //可以为负数,负数从右往左数,返回修改后的字符串长度//设置字符串数据的同时,设置其最大生命周期,秒setex key seconds value //设置字符串数据,如果存在key,则不做任何操作setnx key value//批量设置键值mset k1 v1 k2 v2 k3 v3 k4 v4//批量获取mget k1 k2 k3 k4//批量设置,当都不存在时msetnx k1 v1 k2 v2 k3 v3 k4 v4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>key的基本命令</title>
       <link href="/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/"/>
       <url>/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/</url>
       
-        <content type="html"><![CDATA[<h1 id="key的基本命令"><a href="#key的基本命令" class="headerlink" title="key的基本命令"></a><font color="pink">key的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//删除keydel key//检查key是否存在exists key//设置过期时间,按秒记expire key seconds//查看剩余时间,按秒ttl key //存在没设置时间,-1. 存在设置了时间,返回值为剩余时间. 不存在,-2//移除过期时间persist key//将key移动到其他数据库实例move key db//重复名keyrename key newkey//重复名key,当newkey不存在时renamenx key newkey//查看key的数据类型type key //string hash list set zset<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="key的基本命令"><a href="#key的基本命令" class="headerlink" title="key的基本命令"></a><font color="pink">key的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//删除keydel keydel key1 key2 key3 //返回删除的数量//检查key是否存在exists keyexists key1 key2 key3//返回存在的数量//设置过期时间,按秒记expire key seconds//查看剩余时间,按秒ttl key //存在没设置时间,-1. 存在设置了时间,返回值为剩余时间. 不存在,-2//移除过期时间persist key//将key移动到其他数据库实例move key db//重复名keyrename key newkey//重复名key,当newkey不存在时renamenx key newkey//查看key的数据类型type key //string hash list set zset<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       <categories>
@@ -33,7 +158,7 @@
       <link href="/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/"/>
       <url>/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/</url>
       
-        <content type="html"><![CDATA[<h1 id="redis基础的命令"><a href="#redis基础的命令" class="headerlink" title="redis基础的命令"></a><font color="pink">redis基础的命令</font></h1><p>控制台中的命令:</p><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//启动redis服务redis-server //默认端口6379redis-server &amp;//后台启动,默认端口6379redis-server redis.conf &amp;//后台启动,使用指定配置文件//关闭redis服务redis-cli shutdown //关闭,say bye//使用客户端连接redisredis-cli //默认连接localhost,端口6379的服务redis-cli -h host -p port -a password //连接host主机,port端口,密码为password的服务redis-cli --raw //避免中文乱码//测试redis性能redis-benchmark <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>redis客户端使用的命令:</p><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//查看redis信息info //查看所有info parameter //查看固定的信息//关闭连接 quit or exitquitexit //查看是否连接正常ping //返回pong表示正常//redis 默认有16个数据库实例,0-15select index//切换数据库实例//查看当前实例的key数量dbsize//删除当前实例中的keyflushdb//删除所有实例中的keyflushall//查看当前数据库实例的keykeys pattern // ?匹配一个,*匹配多个keys * //匹配所有keys ?a* //匹配第二个为a的//查看配置项config get parameter //支持通配符config get * //获取所有config get port //查看端口配置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="redis基础的命令"><a href="#redis基础的命令" class="headerlink" title="redis基础的命令"></a><font color="pink">redis基础的命令</font></h1><p>控制台中的命令:</p><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//启动redis服务redis-server //默认端口6379redis-server &amp;//后台启动,默认端口6379redis-server redis.conf &amp;//后台启动,使用指定配置文件//关闭redis服务redis-cli shutdown //关闭,say bye//使用客户端连接redisredis-cli //默认连接localhost,端口6379的服务redis-cli -h host -p port -a password //连接host主机,port端口,密码为password的服务redis-cli --raw //避免中文乱码//测试redis性能redis-benchmark <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>redis客户端使用的命令:</p><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//查看redis信息info //查看所有info parameter //查看固定的信息//关闭连接 quit or exitquitexit //查看是否连接正常ping //返回pong表示正常//redis 默认有16个数据库实例,0-15select index//切换数据库实例//查看当前实例的key数量dbsize//删除当前实例中的keyflushdb//删除所有实例中的keyflushall//查看当前数据库实例的keykeys pattern // ?匹配一个,*匹配多个keys * //匹配所有keys ?a* //匹配第二个为a的keys [a-z0-9A-Z] //匹配[]中字符中的一个//查看配置项config get parameter //支持通配符config get * //获取所有config get port //查看端口配置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       <categories>
