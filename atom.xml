@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-03-12T05:23:20.884Z</updated>
+  <updated>2022-03-16T07:57:59.367Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,161 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>key的基本命令</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/</id>
+    <published>2022-03-16T07:55:51.000Z</published>
+    <updated>2022-03-16T07:57:59.367Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;key的基本命令&quot;&gt;&lt;a href=&quot;#key的基本命令&quot; class=&quot;headerlink&quot; title=&quot;key的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;key的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redis基础的命令</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/</id>
+    <published>2022-03-16T07:55:38.000Z</published>
+    <updated>2022-03-16T07:57:30.023Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;redis基础的命令&quot;&gt;&lt;a href=&quot;#redis基础的命令&quot; class=&quot;headerlink&quot; title=&quot;redis基础的命令&quot;&gt;&lt;/a&gt;&lt;font</summary>
+        
+      
+    
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
+    
+    
+    <category term="tags" scheme="https://choodsire/choodsire.github.io/tags/tags/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你真的了解机器学习吗？</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/12/ni-zhen-de-liao-jie-ji-qi-xue-xi-ma/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/12/ni-zhen-de-liao-jie-ji-qi-xue-xi-ma/</id>
+    <published>2022-03-12T10:06:34.000Z</published>
+    <updated>2022-03-13T05:23:33.439Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;系列文章目录&quot;&gt;&lt;a href=&quot;#系列文章目录&quot; class=&quot;headerlink&quot; title=&quot;系列文章目录&quot;&gt;&lt;/a&gt;系列文章目录&lt;/h1&gt;&lt;font color=&quot;#999AAA&quot;&gt;
+第一章 机器学习概述
+第二章 数据预处理
+第三章</summary>
+        
+      
+    
+    
+    
+    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>入门机器学习，都应该懂的数据预处理</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/12/ru-men-ji-qi-xue-xi-du-ying-gai-dong-de-shu-ju-yu-chu-li/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/12/ru-men-ji-qi-xue-xi-du-ying-gai-dong-de-shu-ju-yu-chu-li/</id>
+    <published>2022-03-12T10:00:16.000Z</published>
+    <updated>2022-03-16T07:59:23.059Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;第一章 机器学习概述&lt;br&gt;第二章 数据预处理&lt;br&gt;第三章 决策树&lt;br&gt;@&lt;a href=&quot;%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95&quot;&gt;TOC&lt;/a&gt;&lt;/p&gt;
+&lt;hr style=&quot; border:solid; width:100px;</summary>
+        
+      
+    
+    
+    
+    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最简单的学习决策树的入门系列</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/12/zui-jian-dan-de-xue-xi-jue-ce-shu-de-ru-men-xi-lie/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/12/zui-jian-dan-de-xue-xi-jue-ce-shu-de-ru-men-xi-lie/</id>
+    <published>2022-03-12T09:49:57.000Z</published>
+    <updated>2022-03-13T05:23:33.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;系列文章目录&quot;&gt;&lt;a href=&quot;#系列文章目录&quot; class=&quot;headerlink&quot; title=&quot;系列文章目录&quot;&gt;&lt;/a&gt;系列文章目录&lt;/h1&gt;&lt;p&gt;第一章 机器学习概述&lt;br&gt;第二章 数据预处理&lt;br&gt;第三章 决策树&lt;/p&gt;
+&lt;p&gt;@&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经过半年的摸爬滚打，入门机器学习如此简单!</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/12/jing-guo-ban-nian-de-mo-pa-gun-da-ru-men-ji-qi-xue-xi-ru-ci-jian-dan/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/12/jing-guo-ban-nian-de-mo-pa-gun-da-ru-men-ji-qi-xue-xi-ru-ci-jian-dan/</id>
+    <published>2022-03-12T08:18:23.000Z</published>
+    <updated>2022-03-13T05:23:33.443Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;经过半年的摸爬滚打，入门机器学习如此简单？&quot;&gt;&lt;a href=&quot;#经过半年的摸爬滚打，入门机器学习如此简单？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>mysql的学习笔记</title>

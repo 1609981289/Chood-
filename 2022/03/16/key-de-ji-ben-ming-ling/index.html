@@ -4,9 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo建站心得, 编程学习,编程,java,python,c++,web">
-    <meta name="description" content="第一次建站心得总之太难了
-">
+    <meta name="keywords" content="key的基本命令, 编程学习,编程,java,python,c++,web">
+    <meta name="description" content="key的基本命令//删除key
+del key
+
+//检查key是否存在
+exists key
+
+//设置过期时间,按秒记
+expire key seconds
+
+//查看剩余时间,按秒
+ttl key //存在没设置时间,-1. 存在设置">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +27,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo建站心得 | 编程学习</title>
+    <title>key的基本命令 | 编程学习</title>
     <link rel="icon" type="image/png" href="/choodsire.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/choodsire.github.io/libs/awesome/css/all.min.css">
@@ -314,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo建站心得</h1>
+                    <h1 class="description center-align post-title">key的基本命令</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +444,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/choodsire.github.io/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/choodsire.github.io/tags/redis/">
+                                <span class="chip bg-color">redis</span>
                             </a>
                         
                     </div>
@@ -447,8 +456,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/choodsire.github.io/categories/Hexo/" class="post-category">
-                                Hexo
+                            <a href="/choodsire.github.io/categories/redis/" class="post-category">
+                                redis
                             </a>
                         
                     </div>
@@ -460,21 +469,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-11
+                    2022-03-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-11
+                    2022-03-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    12
+                    127
                 </div>
                 
 
@@ -504,7 +513,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第一次建站心得"><a href="#第一次建站心得" class="headerlink" title="第一次建站心得"></a>第一次建站心得</h1><p>总之太难了</p>
+                <h1 id="key的基本命令"><a href="#key的基本命令" class="headerlink" title="key的基本命令"></a><font color="pink">key的基本命令</font></h1><pre class="line-numbers language-redis" data-language="redis"><code class="language-redis">//删除key
+del key
+
+//检查key是否存在
+exists key
+
+//设置过期时间,按秒记
+expire key seconds
+
+//查看剩余时间,按秒
+ttl key //存在没设置时间,-1. 存在设置了时间,返回值为剩余时间. 不存在,-2
+
+//移除过期时间
+persist key
+
+//将key移动到其他数据库实例
+move key db
+
+//重复名key
+rename key newkey
+
+//重复名key,当newkey不存在时
+renamenx key newkey
+
+//查看key的数据类型
+type key //string hash list set zset<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -531,7 +566,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/</a>
+                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -569,8 +604,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/choodsire.github.io/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/choodsire.github.io/tags/redis/">
+                                    <span class="chip bg-color">redis</span>
                                 </a>
                             
                         </div>
@@ -744,66 +779,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/">
+                <a href="/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/choodsire.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="Unity常用快捷键">
+                        <img src="/choodsire.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="key的基本命令">
                         
-                        <span class="card-title">Unity常用快捷键</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/choodsire.github.io/categories/Unity/" class="post-category">
-                                    Unity
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/choodsire.github.io/tags/Unity/">
-                        <span class="chip bg-color">Unity</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/choodsire.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo建站心得">
-                        
-                        <span class="card-title">Hexo建站心得</span>
+                        <span class="card-title">key的基本命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -814,14 +801,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/choodsire.github.io/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/choodsire.github.io/categories/redis/" class="post-category">
+                                    redis
                                 </a>
                             
                             
@@ -832,8 +819,57 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/choodsire.github.io/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/choodsire.github.io/tags/redis/">
+                        <span class="chip bg-color">redis</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/choodsire.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="redis基础的命令">
+                        
+                        <span class="card-title">redis基础的命令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/choodsire.github.io/categories/redis/" class="post-category">
+                                    redis
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/choodsire.github.io/tags/tags/">
+                        <span class="chip bg-color">tags</span>
                     </a>
                     
                 </div>

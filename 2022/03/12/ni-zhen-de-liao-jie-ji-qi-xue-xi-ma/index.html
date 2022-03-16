@@ -4,9 +4,24 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo建站心得, 编程学习,编程,java,python,c++,web">
-    <meta name="description" content="第一次建站心得总之太难了
-">
+    <meta name="keywords" content="你真的了解机器学习吗？, 编程学习,编程,java,python,c++,web">
+    <meta name="description" content="系列文章目录
+第一章 机器学习概述
+第二章 数据预处理
+第三章 决策树
+
+
+@TOC
+
+
+
+
+前言
+随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。
+
+
+
+提示：以下是本篇文">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +33,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo建站心得 | 编程学习</title>
+    <title>你真的了解机器学习吗？ | 编程学习</title>
     <link rel="icon" type="image/png" href="/choodsire.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/choodsire.github.io/libs/awesome/css/all.min.css">
@@ -314,12 +329,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo建站心得</h1>
+                    <h1 class="description center-align post-title">你真的了解机器学习吗？</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +450,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/choodsire.github.io/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">machine learning(机器学习)</span>
                             </a>
                         
                     </div>
@@ -447,8 +462,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/choodsire.github.io/categories/Hexo/" class="post-category">
-                                Hexo
+                            <a href="/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                machine learning (机器学习)
                             </a>
                         
                     </div>
@@ -460,28 +475,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-11
+                    2022-03-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-11
+                    2022-03-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    12
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -504,8 +519,113 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第一次建站心得"><a href="#第一次建站心得" class="headerlink" title="第一次建站心得"></a>第一次建站心得</h1><p>总之太难了</p>
+                <h1 id="系列文章目录"><a href="#系列文章目录" class="headerlink" title="系列文章目录"></a>系列文章目录</h1><font color="#999AAA">
+第一章 机器学习概述
+第二章 数据预处理
+第三章 决策树
+<font color="#999AAA">
 
+<p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a></p>
+</font>
+
+<hr style=" border:solid; width:100px; height:1px;" color="#000000" size="1&quot;">
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><font color="#999AAA">
+随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。</font>
+
+<hr style=" border:solid; width:100px; height:1px;" color="#000000" size="1&quot;">
+
+<p><font color="#999AAA">提示：以下是本篇文章正文内容，下面案例可供参考</font></p><font color="#999AAA">
+<h2 id="机器学习是什么？"><a href="#机器学习是什么？" class="headerlink" title="机器学习是什么？"></a>机器学习是什么？</h2><p><font color="#999AAA">机器学习是一门能够让编程计算机从数据中学习的计算机科学。<br>一个计算机程序在完成任务T之后，获得经验E，其表现效果为P，如果任务T的性能表现，也就是用以衡量的P，随着E增加而增加，那么这样计算机程序就被称为机器学习系统。<br>自我完善，自我增进，自我适应。</font></p><font color="#999AAA">
+<h2 id="为什么需要机器学习"><a href="#为什么需要机器学习" class="headerlink" title="为什么需要机器学习"></a>为什么需要机器学习</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2><ul>
+<li>自动化的升级和维护</li>
+<li>解决那些算法过于复杂甚至跟本就没有已知算法的问题</li>
+<li>在机器学习的过程中协助人类获得对事物的洞见</li>
+</ul>
+<h2 id="机器学习的问题"><a href="#机器学习的问题" class="headerlink" title="机器学习的问题"></a>机器学习的问题</h2><p><font color="#999AAA">1. 建模问题<br>   所谓机器学习，在形式上可这样理解：在数据对象中通过统计或推理的方法，寻找一个接受特定输入X，并给出预期输出Y的功能函数f，即Y=f(X)。<br>2. 评估问题<br>   针对已知的输入，函数给出的输出(预测值)与实际输出(目标值)之间存在一定的误差，因此需要构建一个评估体系，根据误差的大小判定函数的优劣。<br>3. 优化问题<br>   学习的核心在于改善性能，通过数据对算法的反复锤炼，不断提升函数预测的准确性，直至获得能够满足实际需求的最优解，这个过程就是机器学习。</font></p><font color="#999AAA">
+<hr style=" border:solid; width:100px; height:1px;" color="#000000" size="1&quot;">
+
+<h2 id="机器学习的种类"><a href="#机器学习的种类" class="headerlink" title="机器学习的种类"></a>机器学习的种类</h2><p><strong>监督学习、无监督学习、半监督学习、强化学习</strong></p>
+<ol>
+<li>有监督学习：用已知输出评估模型的性能。</li>
+<li>无监督学习：在没有已知输出的情况下，仅仅根据输入信息的相关性，进行类别的划分。</li>
+<li>半监督学习：先通过无监督学习划分类别，再根据人工标记通过有监督学习预测输出。</li>
+<li>强化学习：通过对不同决策结果的奖励和惩罚，使机器学习系统在经过足够长时间的训练以后，越来越倾向于给出接近期望结果的输出。</li>
+</ol>
+<p><strong>批量学习和增量学习</strong></p>
+<ol>
+<li>批量学习：将学习的过程和应用的过程截然分开，用全部的训练数据训练模型，然后再在应用场景中实现预测，当预测结果不够理想时，重新回到学习过程，如此循环。</li>
+<li>增量学习：将学习的过程和应用的过程统一起来，在应用的同时以增量的方式，不断学习新的内容，边训练边预测。</li>
+</ol>
+<p><strong>基于实例的学习和基于模型的学习</strong></p>
+<ol>
+<li><p>根据以往的经验，寻找与待预测输入最接近的样本，以其输出作为预测结果。</p>
+<table>
+<thead>
+<tr>
+<th>年龄</th>
+<th>学历</th>
+<th>经验</th>
+<th>性别</th>
+<th>月薪</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>25</td>
+<td>硕士</td>
+<td>2</td>
+<td>女</td>
+<td>10000</td>
+</tr>
+<tr>
+<td>20</td>
+<td>本科</td>
+<td>3</td>
+<td></td>
+<td>8000</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>20</td>
+<td>本科</td>
+<td>3</td>
+<td>男</td>
+<td>？</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>基于模型的学习：根据以往的经验，建立用于联系输出和输入的某种数学模型，将待预测输入代入该模型，预测其结果。<br>输入 -&gt; 输出<br>1           2<br>2           4<br>3           6   Y = 2 * X<br>…<br>9           ?    -&gt; 18</p>
+</li>
+</ol>
+<h2 id="机器学习的一般过程"><a href="#机器学习的一般过程" class="headerlink" title="机器学习的一般过程"></a>机器学习的一般过程</h2><p><strong>数据处理</strong></p>
+<ol>
+<li>数据收集 （数据检索、数据挖掘、爬虫）</li>
+<li>数据清洗</li>
+</ol>
+<p><strong>机器学习</strong></p>
+<ol>
+<li>选择模型 （算法）</li>
+<li>训练模型 （算法）</li>
+<li>评估模型 （工具、框架、算法知识）</li>
+<li>测试模型</li>
+</ol>
+<p><strong>业务运维</strong></p>
+<ol>
+<li>应用模型</li>
+<li>维护模型</li>
+</ol>
+<h2 id="机器学习的典型应用"><a href="#机器学习的典型应用" class="headerlink" title="机器学习的典型应用"></a>机器学习的典型应用</h2><p>股价预测、推荐引擎、自然语言识别、语音识别、图像识别、人脸识别</p>
+<h2 id="机器学习的基本问题"><a href="#机器学习的基本问题" class="headerlink" title="机器学习的基本问题"></a>机器学习的基本问题</h2><p>1)回归问题：根据已知的输入和输出寻找某种性能最佳的模型，将未知输出的输入代入模型，得到连续的输出。</p>
+<p>2)分类问题：根据已知的输入和输出寻找某种性能最佳的模型，将未知输出的输入代入模型，得到离散的输出。</p>
+<p>3)聚类问题：根据已知输入的相似程度，将其划分为不同的群落。</p>
+<p>4)降维问题：在性能损失尽可能小的前提下，降低数据的复杂度。<br>关注公众号《朱同学的深度学习》！不定期更新</p>
+</font></font></font></font>
                 
             </div>
             <hr/>
@@ -521,7 +641,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://choodsire/choodsire.github.io" rel="external nofollow noreferrer">choodsire</a>
+                    <a href="https://choodsire/choodsire.github.io" rel="external nofollow noreferrer">会飞的企鹅</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -531,7 +651,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/</a>
+                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/12/ni-zhen-de-liao-jie-ji-qi-xue-xi-ma/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/12/ni-zhen-de-liao-jie-ji-qi-xue-xi-ma/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -544,7 +664,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY-NC 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="https://choodsire/choodsire.github.io" target="_blank">choodsire</a>
+                    <a href="https://choodsire/choodsire.github.io" target="_blank">会飞的企鹅</a>
                     !
                 </span>
             </div>
@@ -569,8 +689,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/choodsire.github.io/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">machine learning(机器学习)</span>
                                 </a>
                             
                         </div>
@@ -748,13 +868,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/">
+                <a href="/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/choodsire.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="Unity常用快捷键">
+                        <img src="/choodsire.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="redis基础的命令">
                         
-                        <span class="card-title">Unity常用快捷键</span>
+                        <span class="card-title">redis基础的命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -765,14 +885,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-16
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/choodsire.github.io/categories/Unity/" class="post-category">
-                                    Unity
+                            <a href="/choodsire.github.io/categories/redis/" class="post-category">
+                                    redis
                                 </a>
                             
                             
@@ -782,8 +902,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/choodsire.github.io/tags/Unity/">
-                        <span class="chip bg-color">Unity</span>
+                    <a href="/choodsire.github.io/tags/tags/">
+                        <span class="chip bg-color">tags</span>
                     </a>
                     
                 </div>
@@ -794,16 +914,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/">
+                <a href="/choodsire.github.io/2022/03/12/ru-men-ji-qi-xue-xi-du-ying-gai-dong-de-shu-ju-yu-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/choodsire.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="Hexo建站心得">
+                        <img src="/choodsire.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="入门机器学习，都应该懂的数据预处理">
                         
-                        <span class="card-title">Hexo建站心得</span>
+                        <span class="card-title">入门机器学习，都应该懂的数据预处理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -814,26 +934,25 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-12
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/choodsire.github.io/categories/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    machine learning (机器学习)
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/choodsire.github.io/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">machine learning(机器学习)</span>
                     </a>
                     
                 </div>
