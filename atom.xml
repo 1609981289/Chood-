@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-03-16T12:05:24.623Z</updated>
+  <updated>2022-03-28T13:08:32.409Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,216 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>maven</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/maven/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/maven/</id>
+    <published>2022-03-28T13:07:55.000Z</published>
+    <updated>2022-03-28T13:08:32.409Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Maven&quot;&gt;&lt;a href=&quot;#Maven&quot; class=&quot;headerlink&quot; title=&quot;Maven&quot;&gt;&lt;/a&gt;Maven&lt;/h3&gt;&lt;h6 id=&quot;Maven管理多模块应用&quot;&gt;&lt;a href=&quot;#Maven管理多模块应用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Maven" scheme="https://choodsire/choodsire.github.io/categories/Maven/"/>
+    
+    
+    <category term="Maven" scheme="https://choodsire/choodsire.github.io/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jedis</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/jedis/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/jedis/</id>
+    <published>2022-03-28T12:53:52.000Z</published>
+    <updated>2022-03-28T12:54:18.681Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;jedis&quot;&gt;&lt;a href=&quot;#jedis&quot; class=&quot;headerlink&quot; title=&quot;jedis&quot;&gt;&lt;/a&gt;jedis&lt;/h3&gt;&lt;p&gt;pox.xml中的坐标&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-xml&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>reids主从</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/reids-zhu-cong/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/reids-zhu-cong/</id>
+    <published>2022-03-28T12:53:21.000Z</published>
+    <updated>2022-03-28T12:53:43.310Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;redis主从&quot;&gt;&lt;a href=&quot;#redis主从&quot; class=&quot;headerlink&quot; title=&quot;redis主从&quot;&gt;&lt;/a&gt;redis主从&lt;/h3&gt;&lt;p&gt;slaveof host port&lt;/p&gt;
+&lt;p&gt;查看集群信息&lt;/p&gt;
+&lt;p&gt;info</summary>
+        
+      
+    
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redis配置</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/redis-pei-zhi/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/redis-pei-zhi/</id>
+    <published>2022-03-28T12:52:41.000Z</published>
+    <updated>2022-03-28T12:53:10.076Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;redis的配置文件&quot;&gt;&lt;a href=&quot;#redis的配置文件&quot; class=&quot;headerlink&quot; title=&quot;redis的配置文件&quot;&gt;&lt;/a&gt;redis的配置文件&lt;/h3&gt;&lt;p&gt;常用配置:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; port:</summary>
+        
+      
+    
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>redis事务</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/redis-shi-wu/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/redis-shi-wu/</id>
+    <published>2022-03-28T12:52:08.000Z</published>
+    <updated>2022-03-28T12:52:30.950Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;redis事务&quot;&gt;&lt;a href=&quot;#redis事务&quot; class=&quot;headerlink&quot; title=&quot;redis事务&quot;&gt;&lt;/a&gt;redis事务&lt;/h3&gt;&lt;p&gt;事务: 把一组数据库命令放在一起执行,保证操作原子性&lt;/p&gt;
+&lt;p&gt;redis事务:</summary>
+        
+      
+    
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mybatis的逆向工程</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/mybatis-de-ni-xiang-gong-cheng/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/mybatis-de-ni-xiang-gong-cheng/</id>
+    <published>2022-03-28T12:47:58.000Z</published>
+    <updated>2022-03-28T12:49:35.127Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;先加入插件配置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;line-numbers language-xml&quot; data-language=&quot;xml&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    <category term="SpringBoot" scheme="https://choodsire/choodsire.github.io/categories/SpringBoot/"/>
+    
+    
+    <category term="SpringBoot" scheme="https://choodsire/choodsire.github.io/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot笔记</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/28/springboot-bi-ji/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/28/springboot-bi-ji/</id>
+    <published>2022-03-28T12:41:45.000Z</published>
+    <updated>2022-03-28T12:55:45.727Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;SpringBoot&quot;&gt;&lt;a href=&quot;#SpringBoot&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot&quot;&gt;&lt;/a&gt;SpringBoot&lt;/h3&gt;&lt;h4 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="SpringBoot" scheme="https://choodsire/choodsire.github.io/categories/SpringBoot/"/>
+    
+    
+    <category term="SpringBoot" scheme="https://choodsire/choodsire.github.io/tags/SpringBoot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/27/ru-men-mysql/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/27/ru-men-mysql/</id>
+    <published>2022-03-27T13:29:09.708Z</published>
+    <updated>2022-03-27T13:29:09.709Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;title: 入门mysql&lt;br&gt;date: 2022-03-12 18:06:34&lt;br&gt;author: 会飞的企鹅&lt;br&gt;tags: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; mysql&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  categories: mysql&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>zset的基本命令</title>
@@ -318,56 +528,6 @@
     
     
     <category term="mysql" scheme="https://choodsire/choodsire.github.io/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity常用快捷键</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/12/unity-chang-yong-kuai-jie-jian/</id>
-    <published>2022-03-12T03:55:56.000Z</published>
-    <updated>2022-03-12T04:36:41.189Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Unity的常用快捷键&quot;&gt;&lt;a href=&quot;#Unity的常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;Unity的常用快捷键&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;Unity的常用快捷键&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;F2:</summary>
-        
-      
-    
-    
-    
-    <category term="Unity" scheme="https://choodsire/choodsire.github.io/categories/Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://choodsire/choodsire.github.io/tags/Unity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo建站心得</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/11/hexo-jian-zhan-xin-de/</id>
-    <published>2022-03-11T08:32:04.000Z</published>
-    <updated>2022-03-11T08:38:07.858Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;第一次建站心得&quot;&gt;&lt;a href=&quot;#第一次建站心得&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://choodsire/choodsire.github.io/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://choodsire/choodsire.github.io/tags/Hexo/"/>
     
   </entry>
   
