@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>linux安装mysql80</title>
+      <link href="/choodsire.github.io/2022/03/29/linux-an-zhuang-mysql80/"/>
+      <url>/choodsire.github.io/2022/03/29/linux-an-zhuang-mysql80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mysql8-X的坑"><a href="#Mysql8-X的坑" class="headerlink" title="Mysql8.X的坑"></a>Mysql8.X的坑</h1><h4 id="1-下载MySQL80"><a href="#1-下载MySQL80" class="headerlink" title="1. 下载MySQL80"></a>1. 下载MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget https://repo.mysql.com/mysql80-community-release-el7-4.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="2-安装MySQL80"><a href="#2-安装MySQL80" class="headerlink" title="2. 安装MySQL80"></a>2. 安装MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">rpm -ivh mysql80-community-release-el7-4.noarch.rpmyum install mysql-serverIs this ok [y/d/N]: y#如果报此错误warning: /var/cache/yum/x86_64/7/mysql80-community/packages/mysql-community-client-8.0.28-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID 3a79bd29: NOKEYRetrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysqlThe GPG keys listed for the "MySQL 8.0 Community Server" repository are already installed but they are not correct for this package.Check that the correct key URLs are configured for this repository. Failing package is: mysql-community-client-8.0.28-1.el7.x86_64 GPG Keys are configured as: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql#使用该命令解决sudo yum --enablerepo=mysql80-community install mysql -community-server --nogpgcheck<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="3-启动mysqld服务"><a href="#3-启动mysqld服务" class="headerlink" title="3. 启动mysqld服务"></a>3. 启动mysqld服务</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl start mysqld#查看是否启动成功systemctl status mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h4 id="4-登入MySQL"><a href="#4-登入MySQL" class="headerlink" title="4. 登入MySQL"></a>4. 登入MySQL</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#获取默认随机密码grep 'temporary password' /var/log/mysqld.log#登入mysql -uroot -p#更改MySQL本地密码#密码规则由大小写字母数字符号组成方可，并且密码的长度要大于8位。ALTER USER  'root'@'localhost' IDENTIFIED BY 'Qt@123456';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="5-修改密码"><a href="#5-修改密码" class="headerlink" title="5. 修改密码"></a>5. 修改密码</h4><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">#查看密码策略show variables like 'validate_password%';#修改密码策略set global validate_password.policy=0;#密码验证策略低要求set global validate_password.mixed_case_count=0;#密码至少要包含的小写字母个数和大写字母个数set global validate_password.number_count=0; #密码至少要包含的数字个数set global validate_password.special_char_count=0; #密码至少要包含的特殊字符数set global validate_password.length=0; #修改密码ALTER user 'root'@'localhost' IDENTIFIED BY '密码'#修改hostupdate user set host = ‘%’ where user = ‘root’;#刷新flush privileges; <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="6-大功告成"><a href="#6-大功告成" class="headerlink" title="6. 大功告成"></a>6. 大功告成</h4><h4 id="7-远程登入"><a href="#7-远程登入" class="headerlink" title="7. 远程登入"></a>7. 远程登入</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#临时关闭防火墙systemctl stop firewalld#或者永久关闭防火墙systemctl disable firewalld#查看防火墙状态systemctl status firewalld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何在虚拟机中搭建服务器</title>
+      <link href="/choodsire.github.io/2022/03/29/ru-he-zai-xu-ni-ji-zhong-da-jian-fu-wu-qi/"/>
+      <url>/choodsire.github.io/2022/03/29/ru-he-zai-xu-ni-ji-zhong-da-jian-fu-wu-qi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="如何在虚拟机中搭建服务器"><a href="#如何在虚拟机中搭建服务器" class="headerlink" title="如何在虚拟机中搭建服务器"></a>如何在虚拟机中搭建服务器</h2><h4 id="1-首先找到编辑菜单中的虚拟环境编辑器"><a href="#1-首先找到编辑菜单中的虚拟环境编辑器" class="headerlink" title="1. 首先找到编辑菜单中的虚拟环境编辑器"></a>1. 首先找到编辑菜单中的虚拟环境编辑器</h4><p><img src="https://tva2.sinaimg.cn/large/008laG7jly8h0r5x7dw3oj30e708o3zf.jpg"></p><h4 id="2-打开更多设置"><a href="#2-打开更多设置" class="headerlink" title="2. 打开更多设置"></a>2. 打开更多设置</h4><p><img src="https://tva2.sinaimg.cn/large/008laG7jly8h0r5xda61qj30k10j4tb1.jpg"></p><h4 id="3-设置桥接模式-为你电脑的WIFI连接方式"><a href="#3-设置桥接模式-为你电脑的WIFI连接方式" class="headerlink" title="3. 设置桥接模式,为你电脑的WIFI连接方式"></a>3. 设置桥接模式,为你电脑的WIFI连接方式</h4><p><img src="https://tva4.sinaimg.cn/large/008laG7jly8h0r6byh21nj30jy0bjwfm.jpg"></p><p>我这用的是英特尔的所有我选择这个</p><p>如何查看连接方式:</p><ol><li><p>在你的电脑上,找到控制面板-&gt;网路和Internet-&gt;网络和共享中心-&gt;更改适配器设置</p></li><li><p>找到你的WLAN-&gt;属性</p><p><img src="https://tva2.sinaimg.cn/large/008laG7jly8h0r6c0a3m6j30eb0k7jt5.jpg"></p></li><li><p>这个连接时使用就是了</p></li><li><p>看你有没有上面图上的VMware Bridge Protocol 服务</p><ul><li><p>如果没有点击安装</p><p><img src="https://tva2.sinaimg.cn/large/008laG7jly8h0r6hkd2zaj30if0eigmw.jpg"></p><p>如果没有这个,就从磁盘安装</p></li></ul><h4 id="4-设置虚拟机网络适配器为桥接模式"><a href="#4-设置虚拟机网络适配器为桥接模式" class="headerlink" title="4.  设置虚拟机网络适配器为桥接模式"></a>4.  设置虚拟机网络适配器为桥接模式</h4><p><img src="https://tva3.sinaimg.cn/large/008laG7jly8h0r6hunnv1j30qc0cmtag.jpg"></p><p>​    这样就可以从主机访问到我们的虚拟机了(局域网通信)</p><ul><li>在主机中打开cmd窗口,ping 你虚拟机ip</li><li>虚拟机ip 在 虚拟机中的控制台窗口中敲:  ifconfig -a 就能拿到,是最上面的呢一个ip</li><li>如果可以ping到,就表示成功了</li><li>可以尝试在虚拟机中访问百度,如果能正常上网,就表示没问题了</li></ul></li></ol><h4 id="5-内网穿透"><a href="#5-内网穿透" class="headerlink" title="5.  内网穿透"></a>5.  内网穿透</h4><p>​    小米球: <a href="http://ngrok.ciqiuwl.cn/">http://ngrok.ciqiuwl.cn/</a></p><ol><li><p>进入控制台,注册账号</p></li><li><p>登入,然后在商品管理中购买一个免费的</p></li><li><p>然后进入系统管理-&gt;账户管理-&gt;我的隧道</p></li><li><p>编辑你的隧道映射</p></li><li><p>进入同级目录的—&gt;我的账户</p></li><li><p>找到小米球Token,记下来待会要用哦</p></li><li><p>进入主页–&gt;了解小米球—&gt;下载Linux版本的</p></li><li><p>下完后解压,修改里面的 xiaomiqiu.conf 文件</p></li><li><p>只需要改这个 auth_token: token</p><p>token就是上面要你记得Token</p></li><li><p>把带xiaomiqiu的文件都放到你的linux虚拟机中(任意目录)</p></li><li><p>启动</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./xiaomiqiu start-all<span class="token comment">#或者</span>./xiaomiqiu_start.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>如果报Token错误</p><p>那么就得实名认证</p><p>回到我们的小米球控制台中的 —&gt; 我的账户 –&gt; 进行实名认证,这个应该不用教了</p><p>不过要想实名得到—-&gt; 商品管理中的—-&gt;商品列表中的—–&gt;购买0.5元的实名认证服务</p></li><li><p>实名完后再次启动</p></li><li><p>启动成功后,会打印出访问地址,有http和tcp和https的</p></li><li><p>到此就结束了</p><p>如果还想建立网站,可以通过搭建tomcat,nginx服务器</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>maven</title>
       <link href="/choodsire.github.io/2022/03/28/maven/"/>
       <url>/choodsire.github.io/2022/03/28/maven/</url>

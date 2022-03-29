@@ -4,14 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="redis事务, 编程学习,编程,java,python,c++,web">
-    <meta name="description" content="redis事务事务: 把一组数据库命令放在一起执行,保证操作原子性
-redis事务: 只能保证部分原子性
-multi: 用来标记一个事务的开始
-exec: 用来执行事务队列中的所有命令
+    <meta name="keywords" content="linux安装mysql80, 编程学习,编程,java,python,c++,web">
+    <meta name="description" content="Mysql8.X的坑1. 下载MySQL80wget https://repo.mysql.com/mysql80-community-release-el7-4.noarch.rpm
 
-如果在压入事务队列中报错,则执行后所有命令都不执行
-">
+2. 安装MySQL80rpm -ivh mysql">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +19,7 @@ exec: 用来执行事务队列中的所有命令
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>redis事务 | 编程学习</title>
+    <title>linux安装mysql80 | 编程学习</title>
     <link rel="icon" type="image/png" href="/choodsire.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/choodsire.github.io/libs/awesome/css/all.min.css">
@@ -319,12 +315,12 @@ exec: 用来执行事务队列中的所有命令
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/choodsire.github.io/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">redis事务</h1>
+                    <h1 class="description center-align post-title">linux安装mysql80</h1>
                 </div>
             </div>
         </div>
@@ -440,8 +436,8 @@ exec: 用来执行事务队列中的所有命令
                     
                     <div class="article-tag">
                         
-                            <a href="/choodsire.github.io/tags/redis/">
-                                <span class="chip bg-color">redis</span>
+                            <a href="/choodsire.github.io/tags/linux/">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
                     </div>
@@ -452,8 +448,8 @@ exec: 用来执行事务队列中的所有命令
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/choodsire.github.io/categories/redis/" class="post-category">
-                                redis
+                            <a href="/choodsire.github.io/categories/linux/" class="post-category">
+                                linux
                             </a>
                         
                     </div>
@@ -465,28 +461,28 @@ exec: 用来执行事务队列中的所有命令
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-28
+                    2022-03-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-03-28
+                    2022-03-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    187
+                    421
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -509,18 +505,68 @@ exec: 用来执行事务队列中的所有命令
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="redis事务"><a href="#redis事务" class="headerlink" title="redis事务"></a>redis事务</h3><p>事务: 把一组数据库命令放在一起执行,保证操作原子性</p>
-<p>redis事务: 只能保证部分原子性</p>
-<p>multi: 用来标记一个事务的开始</p>
-<p>exec: 用来执行事务队列中的所有命令</p>
-<ul>
-<li>如果在压入事务队列中报错,则执行后所有命令都不执行</li>
-<li>如果在压入事务队列中没报错,则在执行时报错,则不能保证原子性</li>
-</ul>
-<p>discard:清除所有已经压入队列中的命令,并且结束整个事务</p>
-<p>乐观锁</p>
-<p>watch:监控某一个键,当事务执行过程中,此键代表的值发生变化,则放弃执行,否则正常执行</p>
-<p>unwatch:放弃监控所有键    </p>
+                <h1 id="Mysql8-X的坑"><a href="#Mysql8-X的坑" class="headerlink" title="Mysql8.X的坑"></a>Mysql8.X的坑</h1><h4 id="1-下载MySQL80"><a href="#1-下载MySQL80" class="headerlink" title="1. 下载MySQL80"></a>1. 下载MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget https://repo.mysql.com/mysql80-community-release-el7-4.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="2-安装MySQL80"><a href="#2-安装MySQL80" class="headerlink" title="2. 安装MySQL80"></a>2. 安装MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">rpm -ivh mysql80-community-release-el7-4.noarch.rpm
+yum install mysql-server
+Is this ok [y/d/N]: y
+
+#如果报此错误
+warning: /var/cache/yum/x86_64/7/mysql80-community/packages/mysql-community-client-8.0.28-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID 3a79bd29: NOKEY
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+
+
+The GPG keys listed for the "MySQL 8.0 Community Server" repository are already installed but they are not correct for this package.
+Check that the correct key URLs are configured for this repository.
+
+
+ Failing package is: mysql-community-client-8.0.28-1.el7.x86_64
+ GPG Keys are configured as: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+
+#使用该命令解决
+sudo yum --enablerepo=mysql80-community install mysql -community-server --nogpgcheck<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-启动mysqld服务"><a href="#3-启动mysqld服务" class="headerlink" title="3. 启动mysqld服务"></a>3. 启动mysqld服务</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl start mysqld
+#查看是否启动成功
+systemctl status mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="4-登入MySQL"><a href="#4-登入MySQL" class="headerlink" title="4. 登入MySQL"></a>4. 登入MySQL</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#获取默认随机密码
+grep 'temporary password' /var/log/mysqld.log
+#登入
+mysql -uroot -p
+#更改MySQL本地密码
+#密码规则由大小写字母数字符号组成方可，并且密码的长度要大于8位。
+ALTER USER  'root'@'localhost' IDENTIFIED BY 'Qt@123456';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-修改密码"><a href="#5-修改密码" class="headerlink" title="5. 修改密码"></a>5. 修改密码</h4><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">#查看密码策略
+show variables like 'validate_password%';
+#修改密码策略
+set global validate_password.policy=0;
+#密码验证策略低要求
+set global validate_password.mixed_case_count=0;
+#密码至少要包含的小写字母个数和大写字母个数
+set global validate_password.number_count=0; 
+#密码至少要包含的数字个数
+set global validate_password.special_char_count=0; 
+#密码至少要包含的特殊字符数
+set global validate_password.length=0; 
+
+#修改密码
+ALTER user 'root'@'localhost' IDENTIFIED BY '密码'
+#修改host
+update user set host = ‘%’ where user = ‘root’;
+#刷新
+flush privileges; <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="6-大功告成"><a href="#6-大功告成" class="headerlink" title="6. 大功告成"></a>6. 大功告成</h4><h4 id="7-远程登入"><a href="#7-远程登入" class="headerlink" title="7. 远程登入"></a>7. 远程登入</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#临时关闭防火墙
+systemctl stop firewalld
+
+#或者永久关闭防火墙
+systemctl disable firewalld
+
+#查看防火墙状态
+systemctl status firewalld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -547,7 +593,7 @@ exec: 用来执行事务队列中的所有命令
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/28/redis-shi-wu/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/28/redis-shi-wu/</a>
+                    <a href="https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/29/linux-an-zhuang-mysql80/">https://choodsire/choodsire.github.io/choodsire.github.io/2022/03/29/linux-an-zhuang-mysql80/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -585,8 +631,8 @@ exec: 用来执行事务队列中的所有命令
                     
                         <div class="article-tag">
                             
-                                <a href="/choodsire.github.io/tags/redis/">
-                                    <span class="chip bg-color">redis</span>
+                                <a href="/choodsire.github.io/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
                                 </a>
                             
                         </div>
@@ -760,17 +806,18 @@ exec: 用来执行事务队列中的所有命令
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/choodsire.github.io/2022/03/28/redis-pei-zhi/">
+                <a href="/choodsire.github.io/2022/03/29/linux-an-zhuang-mysql80/">
                     <div class="card-image">
                         
                         
-                        <img src="/choodsire.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="redis配置">
+                        <img src="/choodsire.github.io/medias/featureimages/14.jpg" class="responsive-img" alt="linux安装mysql80">
                         
-                        <span class="card-title">redis配置</span>
+                        <span class="card-title">linux安装mysql80</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -780,26 +827,27 @@ exec: 用来执行事务队列中的所有命令
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/choodsire.github.io/categories/redis/" class="post-category">
-                                    redis
+                            <a href="/choodsire.github.io/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/choodsire.github.io/tags/redis/">
-                        <span class="chip bg-color">redis</span>
+                    <a href="/choodsire.github.io/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
                 </div>
@@ -813,13 +861,13 @@ exec: 用来执行事务队列中的所有命令
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/choodsire.github.io/2022/03/28/mybatis-de-ni-xiang-gong-cheng/">
+                <a href="/choodsire.github.io/2022/03/29/ru-he-zai-xu-ni-ji-zhong-da-jian-fu-wu-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/choodsire.github.io/medias/featureimages/14.jpg" class="responsive-img" alt="mybatis的逆向工程">
+                        <img src="/choodsire.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="如何在虚拟机中搭建服务器">
                         
-                        <span class="card-title">mybatis的逆向工程</span>
+                        <span class="card-title">如何在虚拟机中搭建服务器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -830,14 +878,14 @@ exec: 用来执行事务队列中的所有命令
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/choodsire.github.io/categories/SpringBoot/" class="post-category">
-                                    SpringBoot
+                            <a href="/choodsire.github.io/categories/linux/" class="post-category">
+                                    linux
                                 </a>
                             
                             
@@ -847,8 +895,8 @@ exec: 用来执行事务队列中的所有命令
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/choodsire.github.io/tags/SpringBoot/">
-                        <span class="chip bg-color">SpringBoot</span>
+                    <a href="/choodsire.github.io/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
                 </div>
