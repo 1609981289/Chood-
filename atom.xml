@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-03-29T15:19:12.580Z</updated>
+  <updated>2022-03-30T13:35:03.668Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,85 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xml解析错误</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/30/xml-jie-xi-cuo-wu/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/30/xml-jie-xi-cuo-wu/</id>
+    <published>2022-03-30T13:32:41.000Z</published>
+    <updated>2022-03-30T13:35:03.668Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Invalid-byte-2-of-2-byte-UTF-8-sequence&quot;&gt;&lt;a href=&quot;#Invalid-byte-2-of-2-byte-UTF-8-sequence&quot; class=&quot;headerlink&quot; title=&quot;Invalid byte</summary>
+        
+      
+    
+    
+    
+    <category term="error" scheme="https://choodsire/choodsire.github.io/categories/error/"/>
+    
+    
+    <category term="error" scheme="https://choodsire/choodsire.github.io/tags/error/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring-session笔记</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/30/spring-session-bi-ji/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/30/spring-session-bi-ji/</id>
+    <published>2022-03-30T13:32:29.000Z</published>
+    <updated>2022-03-30T13:34:33.930Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;SpringSession&quot;&gt;&lt;a href=&quot;#SpringSession&quot; class=&quot;headerlink&quot; title=&quot;SpringSession&quot;&gt;&lt;/a&gt;SpringSession&lt;/h3&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="SpringSession" scheme="https://choodsire/choodsire.github.io/categories/SpringSession/"/>
+    
+    <category term="JavaWeb" scheme="https://choodsire/choodsire.github.io/categories/SpringSession/JavaWeb/"/>
+    
+    
+    <category term="SpringSession" scheme="https://choodsire/choodsire.github.io/tags/SpringSession/"/>
+    
+    <category term="JavaWeb" scheme="https://choodsire/choodsire.github.io/tags/JavaWeb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx笔记</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/30/nginx-bi-ji/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/30/nginx-bi-ji/</id>
+    <published>2022-03-30T13:32:09.000Z</published>
+    <updated>2022-03-30T13:33:32.042Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Nginx&quot;&gt;&lt;a href=&quot;#Nginx&quot; class=&quot;headerlink&quot; title=&quot;Nginx&quot;&gt;&lt;/a&gt;Nginx&lt;/h3&gt;&lt;h4 id=&quot;第一章-安装&quot;&gt;&lt;a href=&quot;#第一章-安装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="nginx" scheme="https://choodsire/choodsire.github.io/categories/nginx/"/>
+    
+    
+    <category term="nginx" scheme="https://choodsire/choodsire.github.io/tags/nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>linux安装mysql80</title>
@@ -448,86 +527,6 @@
     
     
     <category term="tags" scheme="https://choodsire/choodsire.github.io/tags/tags/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你真的了解机器学习吗？</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/12/ni-zhen-de-liao-jie-ji-qi-xue-xi-ma/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/12/ni-zhen-de-liao-jie-ji-qi-xue-xi-ma/</id>
-    <published>2022-03-12T10:06:34.000Z</published>
-    <updated>2022-03-13T05:23:33.439Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;系列文章目录&quot;&gt;&lt;a href=&quot;#系列文章目录&quot; class=&quot;headerlink&quot; title=&quot;系列文章目录&quot;&gt;&lt;/a&gt;系列文章目录&lt;/h1&gt;&lt;font color=&quot;#999AAA&quot;&gt;
-第一章 机器学习概述
-第二章 数据预处理
-第三章</summary>
-        
-      
-    
-    
-    
-    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>入门机器学习，都应该懂的数据预处理</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/12/ru-men-ji-qi-xue-xi-du-ying-gai-dong-de-shu-ju-yu-chu-li/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/12/ru-men-ji-qi-xue-xi-du-ying-gai-dong-de-shu-ju-yu-chu-li/</id>
-    <published>2022-03-12T10:00:16.000Z</published>
-    <updated>2022-03-16T07:59:23.059Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;第一章 机器学习概述&lt;br&gt;第二章 数据预处理&lt;br&gt;第三章 决策树&lt;br&gt;@&lt;a href=&quot;%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95&quot;&gt;TOC&lt;/a&gt;&lt;/p&gt;
-&lt;hr style=&quot; border:solid; width:100px;</summary>
-        
-      
-    
-    
-    
-    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最简单的学习决策树的入门系列</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/12/zui-jian-dan-de-xue-xi-jue-ce-shu-de-ru-men-xi-lie/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/12/zui-jian-dan-de-xue-xi-jue-ce-shu-de-ru-men-xi-lie/</id>
-    <published>2022-03-12T09:49:57.000Z</published>
-    <updated>2022-03-13T05:23:33.441Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;系列文章目录&quot;&gt;&lt;a href=&quot;#系列文章目录&quot; class=&quot;headerlink&quot; title=&quot;系列文章目录&quot;&gt;&lt;/a&gt;系列文章目录&lt;/h1&gt;&lt;p&gt;第一章 机器学习概述&lt;br&gt;第二章 数据预处理&lt;br&gt;第三章 决策树&lt;/p&gt;
-&lt;p&gt;@&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="machine learning (机器学习)" scheme="https://choodsire/choodsire.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="machine learning(机器学习)" scheme="https://choodsire/choodsire.github.io/tags/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
