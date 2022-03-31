@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-03-30T13:35:03.668Z</updated>
+  <updated>2022-03-31T11:36:18.121Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FastDFS笔记</title>
+    <link href="https://choodsire/choodsire.github.io/2022/03/31/fastdfs-bi-ji/"/>
+    <id>https://choodsire/choodsire.github.io/2022/03/31/fastdfs-bi-ji/</id>
+    <published>2022-03-31T11:35:33.000Z</published>
+    <updated>2022-03-31T11:36:18.121Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;第一章-分布式文件系统&quot;&gt;&lt;a href=&quot;#第一章-分布式文件系统&quot; class=&quot;headerlink&quot; title=&quot;第一章 分布式文件系统&quot;&gt;&lt;/a&gt;第一章 分布式文件系统&lt;/h3&gt;&lt;p&gt;解决了单点文件管理的缺陷:</summary>
+        
+      
+    
+    
+    
+    <category term="JaveWeb" scheme="https://choodsire/choodsire.github.io/categories/JaveWeb/"/>
+    
+    
+    <category term="JavaWeb" scheme="https://choodsire/choodsire.github.io/tags/JavaWeb/"/>
+    
+  </entry>
   
   <entry>
     <title>xml解析错误</title>
@@ -64,9 +89,9 @@
     <category term="JavaWeb" scheme="https://choodsire/choodsire.github.io/categories/SpringSession/JavaWeb/"/>
     
     
-    <category term="SpringSession" scheme="https://choodsire/choodsire.github.io/tags/SpringSession/"/>
-    
     <category term="JavaWeb" scheme="https://choodsire/choodsire.github.io/tags/JavaWeb/"/>
+    
+    <category term="SpringSession" scheme="https://choodsire/choodsire.github.io/tags/SpringSession/"/>
     
   </entry>
   
@@ -502,31 +527,6 @@
     
     
     <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>redis基础的命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/redis-ji-chu-de-ming-ling/</id>
-    <published>2022-03-16T07:55:38.000Z</published>
-    <updated>2022-03-16T08:21:25.285Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;redis基础的命令&quot;&gt;&lt;a href=&quot;#redis基础的命令&quot; class=&quot;headerlink&quot; title=&quot;redis基础的命令&quot;&gt;&lt;/a&gt;&lt;font</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="tags" scheme="https://choodsire/choodsire.github.io/tags/tags/"/>
     
   </entry>
   
