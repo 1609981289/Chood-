@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-03-31T11:36:18.121Z</updated>
+  <updated>2022-04-12T03:01:12.831Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于MTCNN和FaceNet的人脸识别</title>
+    <link href="https://choodsire/choodsire.github.io/2022/04/12/ji-yu-mtcnn-he-facenet-de-ren-lian-shi-bie/"/>
+    <id>https://choodsire/choodsire.github.io/2022/04/12/ji-yu-mtcnn-he-facenet-de-ren-lian-shi-bie/</id>
+    <published>2022-04-12T03:00:15.000Z</published>
+    <updated>2022-04-12T03:01:12.831Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;MTCNN是什么&quot;&gt;&lt;a href=&quot;#MTCNN是什么&quot; class=&quot;headerlink&quot; title=&quot;MTCNN是什么&quot;&gt;&lt;/a&gt;MTCNN是什么&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;MTCNN&lt;/strong&gt;，Multi-task</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="https://choodsire/choodsire.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="神经网络" scheme="https://choodsire/choodsire.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="深度学习" scheme="https://choodsire/choodsire.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="神经网络" scheme="https://choodsire/choodsire.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬虫概述</title>
+    <link href="https://choodsire/choodsire.github.io/2022/04/02/pa-chong-gai-shu/"/>
+    <id>https://choodsire/choodsire.github.io/2022/04/02/pa-chong-gai-shu/</id>
+    <published>2022-04-02T13:48:06.000Z</published>
+    <updated>2022-04-12T02:58:51.178Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;爬⾍概述&quot;&gt;&lt;a href=&quot;#爬⾍概述&quot; class=&quot;headerlink&quot; title=&quot;爬⾍概述&quot;&gt;&lt;/a&gt;爬⾍概述&lt;/h1&gt;&lt;h2 id=&quot;什么是爬⾍&quot;&gt;&lt;a href=&quot;#什么是爬⾍&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="爬虫" scheme="https://choodsire/choodsire.github.io/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="爬虫" scheme="https://choodsire/choodsire.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>FastDFS笔记</title>
@@ -468,56 +522,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;list的基本命令&quot;&gt;&lt;a href=&quot;#list的基本命令&quot; class=&quot;headerlink&quot; title=&quot;list的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;list的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>string的基本命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/string-de-ji-ben-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/string-de-ji-ben-ming-ling/</id>
-    <published>2022-03-16T12:01:36.000Z</published>
-    <updated>2022-03-16T12:03:08.524Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;string的基本命令&quot;&gt;&lt;a href=&quot;#string的基本命令&quot; class=&quot;headerlink&quot; title=&quot;string的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;string的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>key的基本命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/key-de-ji-ben-ming-ling/</id>
-    <published>2022-03-16T07:55:51.000Z</published>
-    <updated>2022-03-16T08:24:29.406Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;key的基本命令&quot;&gt;&lt;a href=&quot;#key的基本命令&quot; class=&quot;headerlink&quot; title=&quot;key的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;key的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
         
       
     
