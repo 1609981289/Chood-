@@ -505,38 +505,38 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Mysql8-X的坑"><a href="#Mysql8-X的坑" class="headerlink" title="Mysql8.X的坑"></a>Mysql8.X的坑</h1><h4 id="1-下载MySQL80"><a href="#1-下载MySQL80" class="headerlink" title="1. 下载MySQL80"></a>1. 下载MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget https://repo.mysql.com/mysql80-community-release-el7-4.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="Mysql8-X的坑"><a href="#Mysql8-X的坑" class="headerlink" title="Mysql8.X的坑"></a>Mysql8.X的坑</h1><h4 id="1-下载MySQL80"><a href="#1-下载MySQL80" class="headerlink" title="1. 下载MySQL80"></a>1. 下载MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">wget</span> https://repo.mysql.com/mysql80-community-release-el7-4.noarch.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h4 id="2-安装MySQL80"><a href="#2-安装MySQL80" class="headerlink" title="2. 安装MySQL80"></a>2. 安装MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">rpm -ivh mysql80-community-release-el7-4.noarch.rpm
-yum install mysql-server
-Is this ok [y/d/N]: y
+<h4 id="2-安装MySQL80"><a href="#2-安装MySQL80" class="headerlink" title="2. 安装MySQL80"></a>2. 安装MySQL80</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">rpm</span> -ivh mysql80-community-release-el7-4.noarch.rpm
+yum <span class="token function">install</span> mysql-server
+Is this ok <span class="token punctuation">[</span>y/d/N<span class="token punctuation">]</span>: y
 
-#如果报此错误
+<span class="token comment">#如果报此错误</span>
 warning: /var/cache/yum/x86_64/7/mysql80-community/packages/mysql-community-client-8.0.28-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID 3a79bd29: NOKEY
 Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
 
-The GPG keys listed for the "MySQL 8.0 Community Server" repository are already installed but they are not correct for this package.
-Check that the correct key URLs are configured for this repository.
+The GPG keys listed <span class="token keyword">for</span> the <span class="token string">"MySQL 8.0 Community Server"</span> repository are already installed but they are not correct <span class="token keyword">for</span> this package.
+Check that the correct key URLs are configured <span class="token keyword">for</span> this repository.
 
 
  Failing package is: mysql-community-client-8.0.28-1.el7.x86_64
  GPG Keys are configured as: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
-#使用该命令解决
-sudo yum --enablerepo=mysql80-community install mysql -community-server --nogpgcheck<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">#使用该命令解决</span>
+<span class="token function">sudo</span> yum --enablerepo<span class="token operator">=</span>mysql80-community <span class="token function">install</span> mysql -community-server --nogpgcheck<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="3-启动mysqld服务"><a href="#3-启动mysqld服务" class="headerlink" title="3. 启动mysqld服务"></a>3. 启动mysqld服务</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl start mysqld
-#查看是否启动成功
+<span class="token comment">#查看是否启动成功</span>
 systemctl status mysqld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="4-登入MySQL"><a href="#4-登入MySQL" class="headerlink" title="4. 登入MySQL"></a>4. 登入MySQL</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#获取默认随机密码
-grep 'temporary password' /var/log/mysqld.log
-#登入
+<h4 id="4-登入MySQL"><a href="#4-登入MySQL" class="headerlink" title="4. 登入MySQL"></a>4. 登入MySQL</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#获取默认随机密码</span>
+<span class="token function">grep</span> <span class="token string">'temporary password'</span> /var/log/mysqld.log
+<span class="token comment">#登入</span>
 mysql -uroot -p
-#更改MySQL本地密码
-#密码规则由大小写字母数字符号组成方可，并且密码的长度要大于8位。
-ALTER USER  'root'@'localhost' IDENTIFIED BY 'Qt@123456';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">#更改MySQL本地密码</span>
+<span class="token comment">#密码规则由大小写字母数字符号组成方可，并且密码的长度要大于8位。</span>
+ALTER <span class="token environment constant">USER</span>  <span class="token string">'root'</span>@<span class="token string">'localhost'</span> IDENTIFIED BY <span class="token string">'Qt@123456'</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="5-修改密码"><a href="#5-修改密码" class="headerlink" title="5. 修改密码"></a>5. 修改密码</h4><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh">#查看密码策略
 show variables like 'validate_password%';
@@ -558,13 +558,13 @@ update user set host = ‘%’ where user = ‘root’;
 #刷新
 flush privileges; <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="6-大功告成"><a href="#6-大功告成" class="headerlink" title="6. 大功告成"></a>6. 大功告成</h4><h4 id="7-远程登入"><a href="#7-远程登入" class="headerlink" title="7. 远程登入"></a>7. 远程登入</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#临时关闭防火墙
+<h4 id="6-大功告成"><a href="#6-大功告成" class="headerlink" title="6. 大功告成"></a>6. 大功告成</h4><h4 id="7-远程登入"><a href="#7-远程登入" class="headerlink" title="7. 远程登入"></a>7. 远程登入</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#临时关闭防火墙</span>
 systemctl stop firewalld
 
-#或者永久关闭防火墙
+<span class="token comment">#或者永久关闭防火墙</span>
 systemctl disable firewalld
 
-#查看防火墙状态
+<span class="token comment">#查看防火墙状态</span>
 systemctl status firewalld<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
@@ -1122,7 +1122,7 @@ systemctl status firewalld<span aria-hidden="true" class="line-numbers-rows"><sp
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">37.9k</span>
+                        class="white-color">39.6k</span>
             
             
             

@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-04-12T03:01:12.831Z</updated>
+  <updated>2022-04-16T12:11:34.889Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>django</title>
+    <link href="https://choodsire/choodsire.github.io/2022/04/16/django/"/>
+    <id>https://choodsire/choodsire.github.io/2022/04/16/django/</id>
+    <published>2022-04-16T12:09:44.000Z</published>
+    <updated>2022-04-16T12:11:34.889Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-shell&quot; data-language=&quot;shell&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="django" scheme="https://choodsire/choodsire.github.io/categories/django/"/>
+    
+    <category term="python" scheme="https://choodsire/choodsire.github.io/categories/django/python/"/>
+    
+    <category term="linux" scheme="https://choodsire/choodsire.github.io/categories/django/python/linux/"/>
+    
+    
+    <category term="django" scheme="https://choodsire/choodsire.github.io/tags/django/"/>
+    
+    <category term="python" scheme="https://choodsire/choodsire.github.io/tags/python/"/>
+    
+    <category term="linux" scheme="https://choodsire/choodsire.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux中的python环境安装</title>
+    <link href="https://choodsire/choodsire.github.io/2022/04/16/linux-zhong-de-python-huan-jing-an-zhuang/"/>
+    <id>https://choodsire/choodsire.github.io/2022/04/16/linux-zhong-de-python-huan-jing-an-zhuang/</id>
+    <published>2022-04-16T12:09:26.000Z</published>
+    <updated>2022-04-16T12:10:53.795Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;python的安装&quot;&gt;&lt;a href=&quot;#python的安装&quot; class=&quot;headerlink&quot; title=&quot;python的安装&quot;&gt;&lt;/a&gt;python的安装&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-shell&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://choodsire/choodsire.github.io/categories/python/"/>
+    
+    <category term="linux" scheme="https://choodsire/choodsire.github.io/categories/python/linux/"/>
+    
+    
+    <category term="python" scheme="https://choodsire/choodsire.github.io/tags/python/"/>
+    
+    <category term="linux" scheme="https://choodsire/choodsire.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>基于MTCNN和FaceNet的人脸识别</title>
@@ -472,56 +534,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;hash的基本操作&quot;&gt;&lt;a href=&quot;#hash的基本操作&quot; class=&quot;headerlink&quot; title=&quot;hash的基本操作&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;hash的基本操作&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>set的基本命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/set-de-ji-ben-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/set-de-ji-ben-ming-ling/</id>
-    <published>2022-03-16T12:03:23.000Z</published>
-    <updated>2022-03-16T12:04:07.173Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;set的基本命令&quot;&gt;&lt;a href=&quot;#set的基本命令&quot; class=&quot;headerlink&quot; title=&quot;set的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;set的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>list的基本命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/list-de-ji-ben-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/list-de-ji-ben-ming-ling/</id>
-    <published>2022-03-16T12:02:23.000Z</published>
-    <updated>2022-03-16T12:03:38.561Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;list的基本命令&quot;&gt;&lt;a href=&quot;#list的基本命令&quot; class=&quot;headerlink&quot; title=&quot;list的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;list的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
         
       
     

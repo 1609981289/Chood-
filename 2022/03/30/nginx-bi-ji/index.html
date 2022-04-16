@@ -507,31 +507,31 @@ cd /root/opt/mys">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><h4 id="第一章-安装"><a href="#第一章-安装" class="headerlink" title="第一章 安装"></a>第一章 安装</h4><h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum update	
-yum install gcc openssl openssl-devel pcre pcre-devel zlib zlib-devel -y
+yum <span class="token function">install</span> gcc openssl openssl-devel pcre pcre-devel zlib zlib-devel -y
 
-cd /root/opt/mysoftwares
-tar -zxvf nginx.tar
+<span class="token builtin class-name">cd</span> /root/opt/mysoftwares
+<span class="token function">tar</span> -zxvf nginx.tar
 
-cd nginx
+<span class="token builtin class-name">cd</span> nginx
 
-./configure --prefix=/usr/local/nginx
+./configure --prefix<span class="token operator">=</span>/usr/local/nginx
 
-make &amp; make install
+<span class="token function">make</span> <span class="token operator">&amp;</span> <span class="token function">make</span> <span class="token function">install</span>
 
-cd /usr/local/nginx
+<span class="token builtin class-name">cd</span> /usr/local/nginx
 
-cd sbin
-ls
+<span class="token builtin class-name">cd</span> sbin
+<span class="token function">ls</span>
 
-# nginx
+<span class="token comment"># nginx</span>
 
-#运行
+<span class="token comment">#运行</span>
 ./nginx
 
-#检测
-ps -ef|grep nginx
+<span class="token comment">#检测</span>
+<span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> nginx
 
-# master worker 进程代表成功
+<span class="token comment"># master worker 进程代表成功</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
@@ -548,13 +548,13 @@ ps -ef|grep nginx
 
 
 
-<h5 id="关闭nginx"><a href="#关闭nginx" class="headerlink" title="关闭nginx"></a>关闭nginx</h5><h6 id="第一种-优雅的关闭"><a href="#第一种-优雅的关闭" class="headerlink" title="第一种 优雅的关闭"></a>第一种 优雅的关闭</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ps -ef|grep nginx
-kill -quit pid<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h5 id="关闭nginx"><a href="#关闭nginx" class="headerlink" title="关闭nginx"></a>关闭nginx</h5><h6 id="第一种-优雅的关闭"><a href="#第一种-优雅的关闭" class="headerlink" title="第一种 优雅的关闭"></a>第一种 优雅的关闭</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> nginx
+<span class="token function">kill</span> -quit pid<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
 
-<h6 id="第二种-快速关闭"><a href="#第二种-快速关闭" class="headerlink" title="第二种 快速关闭"></a>第二种 快速关闭</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ps -ef|grep nginx
-kill -term pid<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h6 id="第二种-快速关闭"><a href="#第二种-快速关闭" class="headerlink" title="第二种 快速关闭"></a>第二种 快速关闭</h6><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> nginx
+<span class="token function">kill</span> -term pid<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
 
@@ -565,141 +565,141 @@ kill -term pid<span aria-hidden="true" class="line-numbers-rows"><span></span><s
 <h5 id="配置检查"><a href="#配置检查" class="headerlink" title="配置检查"></a>配置检查</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./nginx -c /usr/local/nginx/conf/nginx.conf -t<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>-t: 进行配置检查</p>
-<h5 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#查看版本号
+<h5 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#查看版本号</span>
 ./nginx -v
-#查看版本号,编译版本,配置信息
+<span class="token comment">#查看版本号,编译版本,配置信息</span>
 ./nginx -V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<h4 id="第二章-配置文件"><a href="#第二章-配置文件" class="headerlink" title="第二章 配置文件"></a>第二章 配置文件</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#配置worker进程运行用户,nobody也是一个linux用户,一般用于启动程序,没有密码
-#user  nobody;
+<h4 id="第二章-配置文件"><a href="#第二章-配置文件" class="headerlink" title="第二章 配置文件"></a>第二章 配置文件</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#配置worker进程运行用户,nobody也是一个linux用户,一般用于启动程序,没有密码</span>
+<span class="token comment">#user  nobody;</span>
 
-#配置工作进程数目,根据硬件调整,通常等于cpu数量或者2倍
-worker_processes  1;
+<span class="token comment">#配置工作进程数目,根据硬件调整,通常等于cpu数量或者2倍</span>
+worker_processes  <span class="token number">1</span><span class="token punctuation">;</span>
 
-#配置全局错误日志及类型[debug | info | notice | warn | error | crit],默认是error
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
+<span class="token comment">#配置全局错误日志及类型[debug | info | notice | warn | error | crit],默认是error</span>
+<span class="token comment">#error_log  logs/error.log;</span>
+<span class="token comment">#error_log  logs/error.log  notice;</span>
+<span class="token comment">#error_log  logs/error.log  info;</span>
 
-#保存pid的文件
-#pid        logs/nginx.pid;
-
-
-#配置工作模式和连接数
-events {
-    worker_connections  1024;#配置每个worker进程的连接数上限,nginx支持的总连接数就等于改数乘工作进程数目,最大为65535
-}
-
-#配置http服务器,利用它的反向代理功能提供负载均衡支持
-http {
-	#配置nginx支持哪些多媒体类型,可以在conf/mime.types查看支持哪些多媒体类型
-    include       mime.types;
-    #默认文件类型 流类型,可以理解为支持任意类型
-    default_type  application/octet-stream;
-
-	#配置日志格式
-    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-    #                  '$status $body_bytes_sent "$http_referer" '
-    #                  '"$http_user_agent" "$http_x_forwarded_for"';
-
-	#配置access.log日志及存放路径,并使用上面的main日志格式,访问日志
-    #access_log  logs/access.log  main;
-
-    sendfile        on;#开启高效文件传输模式
-    #tcp_nopush     on;#防止网络阻塞,上线一般开启
-
-    #keepalive_timeout  0;
-    keepalive_timeout  65;#长连接超时时间,单位是秒
-
-    #gzip  on;#开启gzip压缩输出,上线一般开启
-
-	#配置虚拟主机
-    server {
-        listen       80;#配置监听端口
-        server_name  localhost;#配置服务名
-
-        #charset koi8-r; #配置字符集,默认是utf-8
-
-        #access_log  logs/host.access.log  main; #访问日志,虚拟主机的
-
-		#默认的匹配斜杠/的请求,当访问路径中有斜杠/,会被该location匹配到并进行处理
-        location / {
-            root   html;#root是配置服务器的默认网站跟目录位置,默认为nginx安装主目录下的html目录
-            index  index.html index.htm;#默认的首页文件的名称
-        }
-
-        #error_page  404              /404.html; #配置404页面
-
-        # redirect server error pages to the static page /50x.html
-        #
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root   html;
-        }
-
-        # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-        #
-        #location ~ \.php$ {
-        #    proxy_pass   http://127.0.0.1;
-        #}
-
-        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-        #
-        #location ~ \.php$ {
-        #    root           html;
-        #    fastcgi_pass   127.0.0.1:9000;
-        #    fastcgi_index  index.php;
-        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
-        #    include        fastcgi_params;
-        #}
-
-        # deny access to .htaccess files, if Apache's document root
-        # concurs with nginx's one
-        #
-        #location ~ /\.ht {
-        #    deny  all;
-        #}
-    }
+<span class="token comment">#保存pid的文件</span>
+<span class="token comment">#pid        logs/nginx.pid;</span>
 
 
-    # another virtual host using mix of IP-, name-, and port-based configuration
-    #
-    #server {
-    #    listen       8000;
-    #    listen       somename:8080;
-    #    server_name  somename  alias  another.alias;
+<span class="token comment">#配置工作模式和连接数</span>
+events <span class="token punctuation">{</span>
+    worker_connections  <span class="token number">1024</span><span class="token punctuation">;</span><span class="token comment">#配置每个worker进程的连接数上限,nginx支持的总连接数就等于改数乘工作进程数目,最大为65535</span>
+<span class="token punctuation">}</span>
 
-    #    location / {
-    #        root   html;
-    #        index  index.html index.htm;
-    #    }
-    #}
+<span class="token comment">#配置http服务器,利用它的反向代理功能提供负载均衡支持</span>
+http <span class="token punctuation">{</span>
+	<span class="token comment">#配置nginx支持哪些多媒体类型,可以在conf/mime.types查看支持哪些多媒体类型</span>
+    include       mime.types<span class="token punctuation">;</span>
+    <span class="token comment">#默认文件类型 流类型,可以理解为支持任意类型</span>
+    default_type  application/octet-stream<span class="token punctuation">;</span>
+
+	<span class="token comment">#配置日志格式</span>
+    <span class="token comment">#log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span>
+    <span class="token comment">#                  '$status $body_bytes_sent "$http_referer" '</span>
+    <span class="token comment">#                  '"$http_user_agent" "$http_x_forwarded_for"';</span>
+
+	<span class="token comment">#配置access.log日志及存放路径,并使用上面的main日志格式,访问日志</span>
+    <span class="token comment">#access_log  logs/access.log  main;</span>
+
+    sendfile        on<span class="token punctuation">;</span><span class="token comment">#开启高效文件传输模式</span>
+    <span class="token comment">#tcp_nopush     on;#防止网络阻塞,上线一般开启</span>
+
+    <span class="token comment">#keepalive_timeout  0;</span>
+    keepalive_timeout  <span class="token number">65</span><span class="token punctuation">;</span><span class="token comment">#长连接超时时间,单位是秒</span>
+
+    <span class="token comment">#gzip  on;#开启gzip压缩输出,上线一般开启</span>
+
+	<span class="token comment">#配置虚拟主机</span>
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">80</span><span class="token punctuation">;</span><span class="token comment">#配置监听端口</span>
+        server_name  localhost<span class="token punctuation">;</span><span class="token comment">#配置服务名</span>
+
+        <span class="token comment">#charset koi8-r; #配置字符集,默认是utf-8</span>
+
+        <span class="token comment">#access_log  logs/host.access.log  main; #访问日志,虚拟主机的</span>
+
+		<span class="token comment">#默认的匹配斜杠/的请求,当访问路径中有斜杠/,会被该location匹配到并进行处理</span>
+        location / <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span><span class="token comment">#root是配置服务器的默认网站跟目录位置,默认为nginx安装主目录下的html目录</span>
+            index  index.html index.htm<span class="token punctuation">;</span><span class="token comment">#默认的首页文件的名称</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">#error_page  404              /404.html; #配置404页面</span>
+
+        <span class="token comment"># redirect server error pages to the static page /50x.html</span>
+        <span class="token comment">#</span>
+        error_page   <span class="token number">500</span> <span class="token number">502</span> <span class="token number">503</span> <span class="token number">504</span>  /50x.html<span class="token punctuation">;</span>
+        location <span class="token operator">=</span> /50x.html <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment"># proxy the PHP scripts to Apache listening on 127.0.0.1:80</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#location ~ \.php$ {</span>
+        <span class="token comment">#    proxy_pass   http://127.0.0.1;</span>
+        <span class="token comment">#}</span>
+
+        <span class="token comment"># pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#location ~ \.php$ {</span>
+        <span class="token comment">#    root           html;</span>
+        <span class="token comment">#    fastcgi_pass   127.0.0.1:9000;</span>
+        <span class="token comment">#    fastcgi_index  index.php;</span>
+        <span class="token comment">#    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span>
+        <span class="token comment">#    include        fastcgi_params;</span>
+        <span class="token comment">#}</span>
+
+        <span class="token comment"># deny access to .htaccess files, if Apache's document root</span>
+        <span class="token comment"># concurs with nginx's one</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#location ~ /\.ht {</span>
+        <span class="token comment">#    deny  all;</span>
+        <span class="token comment">#}</span>
+    <span class="token punctuation">}</span>
 
 
-    # HTTPS server
-    #
-    #server {
-    #    listen       443 ssl;
-    #    server_name  localhost;
+    <span class="token comment"># another virtual host using mix of IP-, name-, and port-based configuration</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#server {</span>
+    <span class="token comment">#    listen       8000;</span>
+    <span class="token comment">#    listen       somename:8080;</span>
+    <span class="token comment">#    server_name  somename  alias  another.alias;</span>
 
-    #    ssl_certificate      cert.pem;
-    #    ssl_certificate_key  cert.key;
+    <span class="token comment">#    location / {</span>
+    <span class="token comment">#        root   html;</span>
+    <span class="token comment">#        index  index.html index.htm;</span>
+    <span class="token comment">#    }</span>
+    <span class="token comment">#}</span>
 
-    #    ssl_session_cache    shared:SSL:1m;
-    #    ssl_session_timeout  5m;
 
-    #    ssl_ciphers  HIGH:!aNULL:!MD5;
-    #    ssl_prefer_server_ciphers  on;
+    <span class="token comment"># HTTPS server</span>
+    <span class="token comment">#</span>
+    <span class="token comment">#server {</span>
+    <span class="token comment">#    listen       443 ssl;</span>
+    <span class="token comment">#    server_name  localhost;</span>
 
-    #    location / {
-    #        root   html;
-    #        index  index.html index.htm;
-    #    }
-    #}
+    <span class="token comment">#    ssl_certificate      cert.pem;</span>
+    <span class="token comment">#    ssl_certificate_key  cert.key;</span>
 
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token comment">#    ssl_session_cache    shared:SSL:1m;</span>
+    <span class="token comment">#    ssl_session_timeout  5m;</span>
+
+    <span class="token comment">#    ssl_ciphers  HIGH:!aNULL:!MD5;</span>
+    <span class="token comment">#    ssl_prefer_server_ciphers  on;</span>
+
+    <span class="token comment">#    location / {</span>
+    <span class="token comment">#        root   html;</span>
+    <span class="token comment">#        index  index.html index.htm;</span>
+    <span class="token comment">#    }</span>
+    <span class="token comment">#}</span>
+
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -709,51 +709,51 @@ http {
 <p>费用贵</p>
 <h5 id="软件负载"><a href="#软件负载" class="headerlink" title="软件负载"></a>软件负载</h5><p>Nginx等</p>
 <p>免费开源</p>
-<h5 id="启动tomcat"><a href="#启动tomcat" class="headerlink" title="启动tomcat"></a>启动tomcat</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./apache-tomcat-9.0.60-01/bin/startup.sh | tail -f ./apache-tomcat-9.0.60-01/logs/catalina.out &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="启动tomcat"><a href="#启动tomcat" class="headerlink" title="启动tomcat"></a>启动tomcat</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">./apache-tomcat-9.0.60-01/bin/startup.sh <span class="token operator">|</span> <span class="token function">tail</span> -f ./apache-tomcat-9.0.60-01/logs/catalina.out <span class="token operator">&amp;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
 <h4 id="第五章-nginx常用负载均衡策略"><a href="#第五章-nginx常用负载均衡策略" class="headerlink" title="第五章 nginx常用负载均衡策略"></a>第五章 nginx常用负载均衡策略</h4><h5 id="轮询-默认"><a href="#轮询-默认" class="headerlink" title="轮询(默认)"></a>轮询(默认)</h5><p>轮</p>
-<h5 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream www.myweb.com{
-     server ***.***.**.***:8081 weight 3;
-	server ***.***.**.***:8082 weight 4;
-          }
+<h5 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream www.myweb.com<span class="token punctuation">{</span>
+     server ***.***.**.***:8081 weight <span class="token number">3</span><span class="token punctuation">;</span>
+	server ***.***.**.***:8082 weight <span class="token number">4</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
 
-    server {
-        listen       80;
-        server_name  localhost;
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name  localhost<span class="token punctuation">;</span>
 
-        #charset koi8-r;
+        <span class="token comment">#charset koi8-r;</span>
 
-        #access_log  logs/host.access.log  main;
+        <span class="token comment">#access_log  logs/host.access.log  main;</span>
 
-        location / {
-            root   html;
-            index  index.html index.htm;
-        }
+        location / <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span>
+            index  index.html index.htm<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
 
-	location /myweb {
-	    proxy_pass http://www.myweb.com;
-	}
+	location /myweb <span class="token punctuation">{</span>
+	    proxy_pass http://www.myweb.com<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 <h5 id="ip-hash"><a href="#ip-hash" class="headerlink" title="ip_hash"></a>ip_hash</h5><p>通过ip的hash%tomcat数 相同 ,访问tomcat</p>
 <p>一次连接后,永远不变</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream www.myweb.com{
-	ip_hash;
-     server ***.***.**.***:8081;
-	server ***.***.**.***:8082;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream www.myweb.com<span class="token punctuation">{</span>
+	ip_hash<span class="token punctuation">;</span>
+     server ***.***.**.***:8081<span class="token punctuation">;</span>
+	server ***.***.**.***:8082<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<h5 id="最少连接"><a href="#最少连接" class="headerlink" title="最少连接"></a>最少连接</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream www.myweb.com{
-     least conn;
-     server ***.***.**.***:8081;
-	server ***.***.**.***:8082;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="最少连接"><a href="#最少连接" class="headerlink" title="最少连接"></a>最少连接</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream www.myweb.com<span class="token punctuation">{</span>
+     least conn<span class="token punctuation">;</span>
+     server ***.***.**.***:8081<span class="token punctuation">;</span>
+	server ***.***.**.***:8082<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -766,96 +766,96 @@ http {
 
 
 <h4 id="第六章-静态代理"><a href="#第六章-静态代理" class="headerlink" title="第六章 静态代理"></a>第六章 静态代理</h4><p>用nginx 静态代理,效率高</p>
-<h5 id="第一种-后缀名"><a href="#第一种-后缀名" class="headerlink" title="第一种 后缀名"></a>第一种 后缀名</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">location ~ .*\.(css|htm|html|js|jpg|png|map3)${
-		root /opt/static;
-}
+<h5 id="第一种-后缀名"><a href="#第一种-后缀名" class="headerlink" title="第一种 后缀名"></a>第一种 后缀名</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">location ~ .*<span class="token punctuation">\</span>.<span class="token punctuation">(</span>css<span class="token operator">|</span>htm<span class="token operator">|</span>html<span class="token operator">|</span>js<span class="token operator">|</span>jpg<span class="token operator">|</span>png<span class="token operator">|</span>map3<span class="token punctuation">)</span><span class="token variable">${
+		root <span class="token operator">/</span>opt<span class="token operator">/</span>static;
+}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h5 id="第二种-目录"><a href="#第二种-目录" class="headerlink" title="第二种 目录"></a>第二种 目录</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">location ~ .*/(css|js|img|images|image){
-		root /opt/static;
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h5 id="第二种-目录"><a href="#第二种-目录" class="headerlink" title="第二种 目录"></a>第二种 目录</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">location ~ .*/<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>img<span class="token operator">|</span>images<span class="token operator">|</span>image<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		root /opt/static<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="第七章-动静分离"><a href="#第七章-动静分离" class="headerlink" title="第七章 动静分离"></a>第七章 动静分离</h4><p>nginx只用与负载均衡</p>
 <p>然后其他nginx负载静态资源</p>
 <p>tomcat负载动态资源</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">  #tomcat
-  upstream www.p2p.com{
-            ip_hash;
-            server xxx.xxx.xxx.xxx:8081;
-           server xxx.xxx.xxx.xxx:8082;
-   }	
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">  <span class="token comment">#tomcat</span>
+  upstream www.p2p.com<span class="token punctuation">{</span>
+            ip_hash<span class="token punctuation">;</span>
+            server xxx.xxx.xxx.xxx:8081<span class="token punctuation">;</span>
+           server xxx.xxx.xxx.xxx:8082<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>	
 
-#处理静态资源的nginx
-   upstream static.p2p.com{
-server xxx.xxx.xxx.xxx:81;
-server xxx.xxx.xxx.xxx:82;
-   }
+<span class="token comment">#处理静态资源的nginx</span>
+   upstream static.p2p.com<span class="token punctuation">{</span>
+server xxx.xxx.xxx.xxx:81<span class="token punctuation">;</span>
+server xxx.xxx.xxx.xxx:82<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
 
-   server {
-       listen       80;
-       server_name  localhost;
+   server <span class="token punctuation">{</span>
+       listen       <span class="token number">80</span><span class="token punctuation">;</span>
+       server_name  localhost<span class="token punctuation">;</span>
 
-       #charset koi8-r;
+       <span class="token comment">#charset koi8-r;</span>
 
-       #access_log  logs/host.access.log  main;
+       <span class="token comment">#access_log  logs/host.access.log  main;</span>
 
-       location / {
-           root   html;
-           index  index.html index.htm;
-       }
+       location / <span class="token punctuation">{</span>
+           root   html<span class="token punctuation">;</span>
+           index  index.html index.htm<span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
 
-	#静态资源转发给tomcat
-       location /p2p {
-           proxy_pass http://www.p2p.com;
-       }
+	<span class="token comment">#静态资源转发给tomcat</span>
+       location /p2p <span class="token punctuation">{</span>
+           proxy_pass http://www.p2p.com<span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
 
-	#静态资源转发给nginx
-       location  ~ .*/(css|js|img|images){
-                proxy_pass http://static.p2p.com;
-       }
+	<span class="token comment">#静态资源转发给nginx</span>
+       location  ~ .*/<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>img<span class="token operator">|</span>images<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                proxy_pass http://static.p2p.com<span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<h4 id="第八章-虚拟主机"><a href="#第八章-虚拟主机" class="headerlink" title="第八章 虚拟主机"></a>第八章 虚拟主机</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream beijing.myweb.com {
-		server 192.168.1.101:8081;
-	}
+<h4 id="第八章-虚拟主机"><a href="#第八章-虚拟主机" class="headerlink" title="第八章 虚拟主机"></a>第八章 虚拟主机</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">upstream beijing.myweb.com <span class="token punctuation">{</span>
+		server <span class="token number">192.168</span>.1.101:8081<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
 
-	upstream nanjing.myweb.com {
-		server 192.168.1.101:8082;
-	}
+	upstream nanjing.myweb.com <span class="token punctuation">{</span>
+		server <span class="token number">192.168</span>.1.101:8082<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
 
-	upstream tianjing.myweb.com {
-		server 192.168.1.101:8083;
-	}
+	upstream tianjing.myweb.com <span class="token punctuation">{</span>
+		server <span class="token number">192.168</span>.1.101:8083<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
 
 
-	server{
-		listen	80;
-		server_name	beijing.myweb.com;
+	server<span class="token punctuation">{</span>
+		listen	<span class="token number">80</span><span class="token punctuation">;</span>
+		server_name	beijing.myweb.com<span class="token punctuation">;</span>
 
-		location / {
-			proxy_pass http://beijing.myweb.com;
-		}
-	}
+		location / <span class="token punctuation">{</span>
+			proxy_pass http://beijing.myweb.com<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
 
-	server{
-		listen	80;
-		server_name	tianjing.myweb.com;
+	server<span class="token punctuation">{</span>
+		listen	<span class="token number">80</span><span class="token punctuation">;</span>
+		server_name	tianjing.myweb.com<span class="token punctuation">;</span>
 
-		location / {
-			proxy_pass http://tianjing.myweb.com;
-		}
-	}
+		location / <span class="token punctuation">{</span>
+			proxy_pass http://tianjing.myweb.com<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
 
-	server{
-		listen	80;
-		server_name	nanjing.myweb.com;
+	server<span class="token punctuation">{</span>
+		listen	<span class="token number">80</span><span class="token punctuation">;</span>
+		server_name	nanjing.myweb.com<span class="token punctuation">;</span>
 
-		location / {
-			proxy_pass http://nanjing.myweb.com;
-		}
-	}
+		location / <span class="token punctuation">{</span>
+			proxy_pass http://nanjing.myweb.com<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
@@ -1427,7 +1427,7 @@ server xxx.xxx.xxx.xxx:82;
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">37.9k</span>
+                        class="white-color">39.6k</span>
             
             
             
