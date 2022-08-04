@@ -6,7 +6,7 @@
   <link href="https://choodsire/choodsire.github.io/atom.xml" rel="self"/>
   
   <link href="https://choodsire/choodsire.github.io/"/>
-  <updated>2022-04-16T12:11:34.889Z</updated>
+  <updated>2022-08-04T12:18:19.825Z</updated>
   <id>https://choodsire/choodsire.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>slf4j-api</title>
+    <link href="https://choodsire/choodsire.github.io/2022/08/04/logback-slf4j-api/"/>
+    <id>https://choodsire/choodsire.github.io/2022/08/04/logback-slf4j-api/</id>
+    <published>2022-08-04T12:17:01.000Z</published>
+    <updated>2022-08-04T12:18:19.825Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;logback-slf4j-api&quot;&gt;&lt;a href=&quot;#logback-slf4j-api&quot; class=&quot;headerlink&quot; title=&quot;logback + slf4j-api&quot;&gt;&lt;/a&gt;logback +</summary>
+        
+      
+    
+    
+    
+    <category term="java后端" scheme="https://choodsire/choodsire.github.io/categories/java%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="日志框架" scheme="https://choodsire/choodsire.github.io/categories/java%E5%90%8E%E7%AB%AF/%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/"/>
+    
+    
+    <category term="java后端" scheme="https://choodsire/choodsire.github.io/tags/java%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="日志框架" scheme="https://choodsire/choodsire.github.io/tags/%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>swagger</title>
+    <link href="https://choodsire/choodsire.github.io/2022/08/04/swagger/"/>
+    <id>https://choodsire/choodsire.github.io/2022/08/04/swagger/</id>
+    <published>2022-08-04T12:14:14.000Z</published>
+    <updated>2022-08-04T12:16:42.376Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Swagger2&quot;&gt;&lt;a href=&quot;#Swagger2&quot; class=&quot;headerlink&quot; title=&quot;Swagger2&quot;&gt;&lt;/a&gt;Swagger2&lt;/h2&gt;&lt;p&gt;1.加入pom依赖&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="java后端" scheme="https://choodsire/choodsire.github.io/categories/java%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="api文档" scheme="https://choodsire/choodsire.github.io/categories/java%E5%90%8E%E7%AB%AF/api%E6%96%87%E6%A1%A3/"/>
+    
+    
+    <category term="java后端" scheme="https://choodsire/choodsire.github.io/tags/java%E5%90%8E%E7%AB%AF/"/>
+    
+    <category term="api文档" scheme="https://choodsire/choodsire.github.io/tags/api%E6%96%87%E6%A1%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>django</title>
@@ -493,56 +552,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>zset的基本命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/zset-de-ji-ben-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/zset-de-ji-ben-ming-ling/</id>
-    <published>2022-03-16T12:04:59.000Z</published>
-    <updated>2022-03-16T12:05:24.623Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;zset的基本命令&quot;&gt;&lt;a href=&quot;#zset的基本命令&quot; class=&quot;headerlink&quot; title=&quot;zset的基本命令&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;zset的基本命令&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hash的基本命令</title>
-    <link href="https://choodsire/choodsire.github.io/2022/03/16/hash-de-ji-ben-ming-ling/"/>
-    <id>https://choodsire/choodsire.github.io/2022/03/16/hash-de-ji-ben-ming-ling/</id>
-    <published>2022-03-16T12:04:21.000Z</published>
-    <updated>2022-03-16T12:04:47.363Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;hash的基本操作&quot;&gt;&lt;a href=&quot;#hash的基本操作&quot; class=&quot;headerlink&quot; title=&quot;hash的基本操作&quot;&gt;&lt;/a&gt;&lt;font color=&quot;pink&quot;&gt;hash的基本操作&lt;/font&gt;&lt;/h1&gt;&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/categories/redis/"/>
-    
-    
-    <category term="redis" scheme="https://choodsire/choodsire.github.io/tags/redis/"/>
     
   </entry>
   
